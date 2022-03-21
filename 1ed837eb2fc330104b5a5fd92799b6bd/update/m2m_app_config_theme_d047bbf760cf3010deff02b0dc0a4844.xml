@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability display_value="">d047bbf772cf3010fa6574706b9c9733</applicability>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-10-14 12:17:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d047bbf760cf3010deff02b0dc0a4844</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>m2m_app_config_theme_d047bbf760cf3010deff02b0dc0a4844</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-14 12:17:48</sys_updated_on>
+        <theme display_value="Light Theme">1847bbf713cf3010cf9e6a0360329b32</theme>
+        <ux_app_configuration display_value="Hospital Available Beds Config">bf37bbf72fcf30104b5a5fd92799b609</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

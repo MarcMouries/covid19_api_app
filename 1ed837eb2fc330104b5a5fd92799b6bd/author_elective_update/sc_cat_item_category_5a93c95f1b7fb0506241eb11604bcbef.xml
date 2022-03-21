@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Request Bed Information">101285db1b7fb0506241eb11604bcbc2</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-18 16:42:58</sys_created_on>
+        <sys_id>5a93c95f1b7fb0506241eb11604bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Request Bed Information</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sc_cat_item_category_5a93c95f1b7fb0506241eb11604bcbef</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-18 16:42:58</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</application>
+        <file_path/>
+        <instance_id>13f0ea84db076c10566750b6f4961941</instance_id>
+        <instance_name>kljonesdemo1224</instance_name>
+        <name>sc_cat_item_category_5a93c95f1b7fb0506241eb11604bcbef</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Request Bed Information">101285db1b7fb0506241eb11604bcbc2</sc_cat_item><sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>kjones</sys_created_by><sys_created_on>2021-11-18 16:42:58</sys_created_on><sys_id>5a93c95f1b7fb0506241eb11604bcbef</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Can We Help You?.Request Bed Information</sys_name><sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package><sys_policy/><sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope><sys_update_name>sc_cat_item_category_5a93c95f1b7fb0506241eb11604bcbef</sys_update_name><sys_updated_by>kjones</sys_updated_by><sys_updated_on>2021-11-18 16:42:58</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>355786892</payload_hash>
+        <record_name>Can We Help You?.Request Bed Information</record_name>
+        <reverted_from/>
+        <source>07e90aa69793b4d097ee3e0e6253aff4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-18 16:42:58</sys_created_on>
+        <sys_id>5293c95f1b7fb0506241eb11604bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d33ee0e0c0000001</sys_recorded_at>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-18 16:42:58</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>9693c95fdc7fb0503fa6469544effffb</update_guid>
+        <update_guid_history>9693c95fdc7fb0503fa6469544effffb:355786892</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c204c59f1b7fb0506241eb11604bcbf2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-18 16:44:52</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>18f280244ebf4a788312b1e7d40879a4</sys_id>
+        <sys_metadata>5a93c95f1b7fb0506241eb11604bcbef</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Request Bed Information</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_scope_delete display_value="">492726965bfb4f379cc40f7801cc6b09</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_5a93c95f1b7fb0506241eb11604bcbef</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_5a93c95f1b7fb0506241eb11604bcbef">5293c95f1b7fb0506241eb11604bcbfc</sys_update_version>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-18 16:44:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

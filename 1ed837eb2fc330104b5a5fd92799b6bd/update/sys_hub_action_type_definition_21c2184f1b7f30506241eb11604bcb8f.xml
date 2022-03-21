@@ -1,0 +1,2545 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch1-hotfix1a-09-21-2021_10-12-2021_1252.zip</compiler_build>
+        <copied_from>d78dc87b2f0730104b5a5fd92799b6b4</copied_from>
+        <copied_from_name>Query Bed Count</copied_from_name>
+        <description>Use Zip API to query available beds by zip code</description>
+        <ih_action>true</ih_action>
+        <internal_name>query_bed_count__json_parser</internal_name>
+        <label_cache>[{"name":"{{action.zip}}","label":"action➛zip","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.radius}}","label":"action➛radius","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.zip2}}","label":"action➛zip2","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.radius2}}","label":"action➛radius2","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.key2}}","label":"action➛key2","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.qbc_zip}}","label":"action➛Zip","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"b60bd61d-3e3c-4804-b341-6034ecfe1cfe"}},{"name":"{{action.qbc_zip1}}","label":"action➛qbc_zip","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.qbc_radius}}","label":"action➛Radius","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"2728e908-b964-43e4-8a21-297feff38773"}},{"name":"{{action.qbc_key}}","label":"action➛Key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"c2a35518-364f-463d-a60c-5a76267e77ee"}},{"name":"{{step[64bd253b-1cbf-48fc-a006-002377430ea9].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[64bd253b-1cbf-48fc-a006-002377430ea9].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ded6dac0-a28f-49a6-b9d0-706468516d75].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>f9f51cc31bbf30506241eb11604bcb68</master_snapshot>
+        <name>Query Bed Count - JSON Parser</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>21c2184f1b7f30506241eb11604bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Query Bed Count - JSON Parser</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_21c2184f1b7f30506241eb11604bcb8f</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2022-03-17 12:06:38</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=21c2184f1b7f30506241eb11604bcb8f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=21c2184f1b7f30506241eb11604bcb8f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>21c2184f1b7f30506241eb11604bcb8f</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>4f05dc431bbf30506241eb11604bcbe4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:42:27</sys_updated_on>
+        <value/>
+        <variable display_value="QBC">8705dc431bbf30506241eb11604bcbda</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>21c2184f1b7f30506241eb11604bcb8f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:12</sys_created_on>
+        <sys_id>b9c2584f1b7f30506241eb11604bcb53</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:32:24</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD71c2584fcd7f30505ee850ba93b1881f":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD71c2584fcd7f30505ee850ba93b1881f.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"3f6b5812-f9bf-4f7f-8693-7ed4e918022a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD71c2584fcd7f30505ee850ba93b1881f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">b5c2584f1b7f30506241eb11604bcb22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>21c2184f1b7f30506241eb11604bcb8f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:12</sys_created_on>
+        <sys_id>f5c2584f1b7f30506241eb11604bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:12</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">75c2584f1b7f30506241eb11604bcb2b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=21c2184f1b7f30506241eb11604bcb8f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>qbc</field>
+        <id>21c2184f1b7f30506241eb11604bcb8f</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>cb05dc431bbf30506241eb11604bcbe4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:42:27</sys_updated_on>
+        <table>var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f</table>
+        <value>{{step[ded6dac0-a28f-49a6-b9d0-706468516d75].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>21c2184f1b7f30506241eb11604bcb8f</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:12</sys_created_on>
+        <sys_id>75c2584f1b7f30506241eb11604bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:12</sys_updated_on>
+        <table>var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>21c2184f1b7f30506241eb11604bcb8f</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:12</sys_created_on>
+        <sys_id>b1c2584f1b7f30506241eb11604bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:12</sys_updated_on>
+        <table>var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=21c2184f1b7f30506241eb11604bcb8f^sys_idNOT IN8f05dc431bbf30506241eb11604bcba6,e5c2184f1b7f30506241eb11604bcbf0"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</action>
+        <cid>ded6dac0-a28f-49a6-b9d0-706468516d75</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:06</sys_created_on>
+        <sys_id>8f05dc431bbf30506241eb11604bcba6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8f05dc431bbf30506241eb11604bcba6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8f05dc431bbf30506241eb11604bcba6</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>0305dc431bbf30506241eb11604bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8f05dc431bbf30506241eb11604bcba6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>4705dc431bbf30506241eb11604bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"status","children":[],"type":"string","jpath":"$.status","previewValue":"true"},{"name":"data","children":[{"name":"data_object","children":[{"name":"Zip","children":[],"type":"string","jpath":"$.data[*].Zip","previewValue":"20876"},{"name":"Name","children":[],"type":"string","jpath":"$.data[*].Name","previewValue":"HOLY CROSS GERMANTOWN HOSPITAL"},{"name":"Address","children":[],"type":"string","jpath":"$.data[*].Address","previewValue":"19801 OBSERVATION DRIVE"},{"name":"City","children":[],"type":"string","jpath":"$.data[*].City","previewValue":"GERMANTOWN"},{"name":"State","children":[],"type":"string","jpath":"$.data[*].State","previewValue":"MD"},{"name":"telephone","children":[],"type":"string","jpath":"$.data[*].telephone","previewValue":"(301) 557-6020"},{"name":"latitude","children":[],"type":"string","jpath":"$.data[*].latitude","previewValue":"39.1806801590001"},{"name":"longitude","children":[],"type":"string","jpath":"$.data[*].longitude","previewValue":"-77.242257208"},{"name":"website","children":[],"type":"string","jpath":"$.data[*].website","previewValue":"NOT AVAILABLE"},{"name":"beds","children":[],"type":"string","jpath":"$.data[*].beds","previewValue":"93"},{"name":"naics_desc","children":[],"type":"string","jpath":"$.data[*].naics_desc","previewValue":"GENERAL MEDICAL AND SURGICAL HOSPITALS"},{"name":"helipad","children":[],"type":"string","jpath":"$.data[*].helipad","previewValue":"N"},{"name":"population","children":[],"type":"string","jpath":"$.data[*].population","previewValue":"93"},{"name":"county","children":[],"type":"string","jpath":"$.data[*].county","previewValue":"MONTGOMERY"},{"name":"distance","children":[],"type":"string","jpath":"$.data[*].distance","previewValue":"3.7574679708458545"}],"type":"object","jpath":"$.data[*]","previewValue":""}],"type":"array.object","jpath":"$.data[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8f05dc431bbf30506241eb11604bcba6</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>4f05dc431bbf30506241eb11604bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+        <value>{"status":true,"data":[{"Zip":"20876","Name":"HOLY CROSS GERMANTOWN HOSPITAL","Address":"19801 OBSERVATION DRIVE","City":"GERMANTOWN","State":"MD","telephone":"(301) 557-6020","latitude":"39.1806801590001","longitude":"-77.242257208","website":"NOT AVAILABLE","beds":"93","naics_desc":"GENERAL MEDICAL AND SURGICAL HOSPITALS","helipad":"N","population":"93","county":"MONTGOMERY","distance":"3.7574679708458545"}]}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_8f05dc431bbf30506241eb11604bcba6^id=8f05dc431bbf30506241eb11604bcba6"/>
+    <sys_element_mapping action="delete_multiple" query="id=8f05dc431bbf30506241eb11604bcba6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>8f05dc431bbf30506241eb11604bcba6</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>0305dc431bbf30506241eb11604bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>8f05dc431bbf30506241eb11604bcba6</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>c305dc431bbf30506241eb11604bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>8f05dc431bbf30506241eb11604bcba6</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>8705dc431bbf30506241eb11604bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[64bd253b-1cbf-48fc-a006-002377430ea9].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>8f05dc431bbf30506241eb11604bcba6</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>4f05dc431bbf30506241eb11604bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8f05dc431bbf30506241eb11604bcba6"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8f05dc431bbf30506241eb11604bcba6^sys_idNOT IN4705dc431bbf30506241eb11604bcbc6"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD0305dc431dbf3050470df75273b880ab,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=c95379a3-4568-46aa-9fed-ab81d6e8e177</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">8f05dc431bbf30506241eb11604bcba6</model>
+        <model_id>8f05dc431bbf30506241eb11604bcba6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8f05dc431bbf30506241eb11604bcba6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:06</sys_created_on>
+        <sys_id>4705dc431bbf30506241eb11604bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8f05dc431bbf30506241eb11604bcba6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_8f05dc431bbf30506241eb11604bcba6^sys_idNOT IN8305dc431bbf30506241eb11604bcbcd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_8f05dc431bbf30506241eb11604bcba6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>8305dc431bbf30506241eb11604bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>root</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_8f05dc431bbf30506241eb11604bcba6_root_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</action>
+        <cid>64bd253b-1cbf-48fc-a006-002377430ea9</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>e5c2184f1b7f30506241eb11604bcbf0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:23</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e5c2184f1b7f30506241eb11604bcbf0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e5c2184f1b7f30506241eb11604bcbf0</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>39c2584f1b7f30506241eb11604bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <value>https://service.zipapi.us</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e5c2184f1b7f30506241eb11604bcbf0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>71c2584f1b7f30506241eb11604bcb02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e5c2184f1b7f30506241eb11604bcbf0</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>75c2584f1b7f30506241eb11604bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e5c2184f1b7f30506241eb11604bcbf0</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>b1c2584f1b7f30506241eb11604bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e5c2184f1b7f30506241eb11604bcbf0</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>bdc2584f1b7f30506241eb11604bcb01</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:23</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e5c2184f1b7f30506241eb11604bcbf0</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:32:24</sys_created_on>
+        <sys_id>ef03d08f1b7f30506241eb11604bcb9a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:23</sys_updated_on>
+        <value/>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e5c2184f1b7f30506241eb11604bcbf0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>f5c2584f1b7f30506241eb11604bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e5c2184f1b7f30506241eb11604bcbf0</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>f9c2584f1b7f30506241eb11604bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e5c2184f1b7f30506241eb11604bcbf0</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>fdc2584f1b7f30506241eb11604bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e5c2184f1b7f30506241eb11604bcbf0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>e5c2184f1b7f30506241eb11604bcbf0</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>fdc2184f1b7f30506241eb11604bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>e5c2184f1b7f30506241eb11604bcbf0</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>3dc2184f1b7f30506241eb11604bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>e5c2184f1b7f30506241eb11604bcbf0</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>79c2184f1b7f30506241eb11604bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>e5c2184f1b7f30506241eb11604bcbf0</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>f1c2184f1b7f30506241eb11604bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>e5c2184f1b7f30506241eb11604bcbf0</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>75c2584f1b7f30506241eb11604bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>e5c2184f1b7f30506241eb11604bcbf0</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>b5c2184f1b7f30506241eb11604bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>e5c2184f1b7f30506241eb11604bcbf0</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>79c2184f1b7f30506241eb11604bcbfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>e5c2184f1b7f30506241eb11604bcbf0</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>b1c2584f1b7f30506241eb11604bcb00</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"X-API-KEY","value":"{{action.qbc_key}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"radius","value":"{{action.qbc_radius}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>e5c2184f1b7f30506241eb11604bcbf0</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>31c2184f1b7f30506241eb11604bcbff</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>hospital/radius/{{action.qbc_zip}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=e5c2184f1b7f30506241eb11604bcbf0"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e5c2184f1b7f30506241eb11604bcbf0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e5c2184f1b7f30506241eb11604bcbf0^sys_idNOT IN79c2184f1b7f30506241eb11604bcbfb"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>resource_path</input_name>
+        <instance>e5c2184f1b7f30506241eb11604bcbf0</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"resource_path":{"scriptActive":false}}</script>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:11</sys_created_on>
+        <sys_id>79c2184f1b7f30506241eb11604bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:11</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_e5c2184f1b7f30506241eb11604bcbf0"/>
+    <sys_hub_action_input action="delete_multiple" query="model=21c2184f1b7f30506241eb11604bcb8f^sys_idNOT IN3e05dc431bbf30506241eb11604bcb16,7605dc431bbf30506241eb11604bcb0f,f205dc431bbf30506241eb11604bcb06"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c2a35518-364f-463d-a60c-5a76267e77ee</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>qbc_key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Key</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</model>
+        <model_id>21c2184f1b7f30506241eb11604bcb8f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:05</sys_created_on>
+        <sys_id>3e05dc431bbf30506241eb11604bcb16</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:44:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3e05dc431bbf30506241eb11604bcb16"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2728e908-b964-43e4-8a21-297feff38773</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>qbc_radius</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Radius</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</model>
+        <model_id>21c2184f1b7f30506241eb11604bcb8f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:05</sys_created_on>
+        <sys_id>7605dc431bbf30506241eb11604bcb0f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:44:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7605dc431bbf30506241eb11604bcb0f"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b60bd61d-3e3c-4804-b341-6034ecfe1cfe</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>qbc_zip</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Zip</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</model>
+        <model_id>21c2184f1b7f30506241eb11604bcb8f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:05</sys_created_on>
+        <sys_id>f205dc431bbf30506241eb11604bcb06</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:44:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f205dc431bbf30506241eb11604bcb06"/>
+    <sys_hub_action_output action="delete_multiple" query="model=21c2184f1b7f30506241eb11604bcb8f^sys_idNOT IN75c2584f1b7f30506241eb11604bcb2b,8705dc431bbf30506241eb11604bcbda,b5c2584f1b7f30506241eb11604bcb22"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e033e82a-634d-4d3a-9e9a-351d69c03c40,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</model>
+        <model_id>21c2184f1b7f30506241eb11604bcb8f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:12</sys_created_on>
+        <sys_id>75c2584f1b7f30506241eb11604bcb2b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=75c2584f1b7f30506241eb11604bcb2b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=75c2584f1b7f30506241eb11604bcb2b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD0b05dc4372bf3050c9da02af5603fdd4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=ded6dac0-a28f-49a6-b9d0-706468516d75,sourceType=step,sourceUiUniqueId=c95379a3-4568-46aa-9fed-ab81d6e8e177,uiType=object,uiTypeLabel=Object,uiUniqueId=a482ebf1-c863-46af-a87f-bf60fa9a4640</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>qbc</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>QBC</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</model>
+        <model_id>21c2184f1b7f30506241eb11604bcb8f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>8705dc431bbf30506241eb11604bcbda</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:42:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8705dc431bbf30506241eb11604bcbda"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8705dc431bbf30506241eb11604bcbda"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD71c2584fcd7f30505ee850ba93b1881f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3f6b5812-f9bf-4f7f-8693-7ed4e918022a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</model>
+        <model_id>21c2184f1b7f30506241eb11604bcb8f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:12</sys_created_on>
+        <sys_id>b5c2584f1b7f30506241eb11604bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b5c2584f1b7f30506241eb11604bcb22"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b5c2584f1b7f30506241eb11604bcb22"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=21c2184f1b7f30506241eb11604bcb8f"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=21c2184f1b7f30506241eb11604bcb8f^sys_idNOT IN75c2584f1b7f30506241eb11604bcb55"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</action_type_id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:12</sys_created_on>
+        <sys_id>75c2584f1b7f30506241eb11604bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:12</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=75c2584f1b7f30506241eb11604bcb55"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f^sys_idNOT IN3605dc431bbf30506241eb11604bcb29,b605dc431bbf30506241eb11604bcb15,fe05dc431bbf30506241eb11604bcb0d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>qbc_key</element>
+        <help/>
+        <hint/>
+        <label>Key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:06</sys_created_on>
+        <sys_id>3605dc431bbf30506241eb11604bcb29</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Key</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f_qbc_key_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:44:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>qbc_radius</element>
+        <help/>
+        <hint/>
+        <label>Radius</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:05</sys_created_on>
+        <sys_id>b605dc431bbf30506241eb11604bcb15</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Radius</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f_qbc_radius_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:44:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>qbc_zip</element>
+        <help/>
+        <hint/>
+        <label>Zip</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:05</sys_created_on>
+        <sys_id>fe05dc431bbf30506241eb11604bcb0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Zip</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f_qbc_zip_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:44:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_21c2184f1b7f30506241eb11604bcb8f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f^sys_idNOT INbdc2584f1b7f30506241eb11604bcb36,cf05dc431bbf30506241eb11604bcbe0,fdc2584f1b7f30506241eb11604bcb29"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:12</sys_created_on>
+        <sys_id>bdc2584f1b7f30506241eb11604bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>qbc</element>
+        <help/>
+        <hint/>
+        <label>QBC</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:41:07</sys_created_on>
+        <sys_id>cf05dc431bbf30506241eb11604bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>QBC</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f_qbc_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:41:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:31:12</sys_created_on>
+        <sys_id>fdc2584f1b7f30506241eb11604bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f___action_status___en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:31:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_21c2184f1b7f30506241eb11604bcb8f"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=21c2184f1b7f30506241eb11604bcb8f^sys_idNOT IN1af55cc31bbf30506241eb11604bcbc0"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"1af55cc31bbf30506241eb11604bcbc0","name":"plan","plan_signature":null}}</plan>
+        <snapshot>0ef51cc31bbf30506241eb11604bcbe6</snapshot>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1af55cc31bbf30506241eb11604bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:09</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Use Zip API to query available beds by zip code</description>
+        <internal_name>query_bed_count__json_parser</internal_name>
+        <label_cache>[{"name":"{{action.zip}}","label":"action➛zip","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.radius}}","label":"action➛radius","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.zip2}}","label":"action➛zip2","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.radius2}}","label":"action➛radius2","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.key2}}","label":"action➛key2","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.qbc_zip}}","label":"action➛Zip","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"b60bd61d-3e3c-4804-b341-6034ecfe1cfe"}},{"name":"{{action.qbc_zip1}}","label":"action➛qbc_zip","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.qbc_radius}}","label":"action➛Radius","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"2728e908-b964-43e4-8a21-297feff38773"}},{"name":"{{action.qbc_key}}","label":"action➛Key","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"c2a35518-364f-463d-a60c-5a76267e77ee"}},{"name":"{{step[64bd253b-1cbf-48fc-a006-002377430ea9].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[64bd253b-1cbf-48fc-a006-002377430ea9].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ded6dac0-a28f-49a6-b9d0-706468516d75].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Query Bed Count - JSON Parser</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Query Bed Count - JSON Parser">21c2184f1b7f30506241eb11604bcb8f</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f9f51cc31bbf30506241eb11604bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f9f51cc31bbf30506241eb11604bcb68"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f9f51cc31bbf30506241eb11604bcb68"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f9f51cc31bbf30506241eb11604bcb68</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>06f51cc31bbf30506241eb11604bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">f5f51cc31bbf30506241eb11604bcbc1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f9f51cc31bbf30506241eb11604bcb68</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>c6f51cc31bbf30506241eb11604bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD7df51cc3cdbf305089708135dde7dbb4":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD7df51cc3cdbf305089708135dde7dbb4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"3f6b5812-f9bf-4f7f-8693-7ed4e918022a\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD7df51cc3cdbf305089708135dde7dbb4\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">f1f51cc31bbf30506241eb11604bcbb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f9f51cc31bbf30506241eb11604bcb68"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>qbc</field>
+        <id>f9f51cc31bbf30506241eb11604bcb68</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>0ef51cc31bbf30506241eb11604bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68</table>
+        <value>{{step[ded6dac0-a28f-49a6-b9d0-706468516d75].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>f9f51cc31bbf30506241eb11604bcb68</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>82f51cc31bbf30506241eb11604bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>f9f51cc31bbf30506241eb11604bcb68</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>cef51cc31bbf30506241eb11604bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=f9f51cc31bbf30506241eb11604bcb68^sys_idNOT IN39f51cc31bbf30506241eb11604bcb84,79f51cc31bbf30506241eb11604bcba3"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Query Bed Count - JSON Parser">f9f51cc31bbf30506241eb11604bcb68</action>
+        <cid>64bd253b-1cbf-48fc-a006-002377430ea9</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>39f51cc31bbf30506241eb11604bcb84</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=39f51cc31bbf30506241eb11604bcb84"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>39f51cc31bbf30506241eb11604bcb84</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>35f51cc31bbf30506241eb11604bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>39f51cc31bbf30506241eb11604bcb84</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>39f51cc31bbf30506241eb11604bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>39f51cc31bbf30506241eb11604bcb84</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>71f51cc31bbf30506241eb11604bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>39f51cc31bbf30506241eb11604bcb84</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>75f51cc31bbf30506241eb11604bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>39f51cc31bbf30506241eb11604bcb84</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>b1f51cc31bbf30506241eb11604bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>39f51cc31bbf30506241eb11604bcb84</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>bdf51cc31bbf30506241eb11604bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>39f51cc31bbf30506241eb11604bcb84</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>f9f51cc31bbf30506241eb11604bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <value>https://service.zipapi.us</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>39f51cc31bbf30506241eb11604bcb84</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>fdf51cc31bbf30506241eb11604bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=39f51cc31bbf30506241eb11604bcb84"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>39f51cc31bbf30506241eb11604bcb84</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>f5f51cc31bbf30506241eb11604bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>39f51cc31bbf30506241eb11604bcb84</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>35f51cc31bbf30506241eb11604bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>39f51cc31bbf30506241eb11604bcb84</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>71f51cc31bbf30506241eb11604bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>39f51cc31bbf30506241eb11604bcb84</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>f9f51cc31bbf30506241eb11604bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>39f51cc31bbf30506241eb11604bcb84</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>7df51cc31bbf30506241eb11604bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>39f51cc31bbf30506241eb11604bcb84</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>bdf51cc31bbf30506241eb11604bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>39f51cc31bbf30506241eb11604bcb84</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>75f51cc31bbf30506241eb11604bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>39f51cc31bbf30506241eb11604bcb84</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>b9f51cc31bbf30506241eb11604bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"X-API-KEY","value":"{{action.qbc_key}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"radius","value":"{{action.qbc_radius}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>39f51cc31bbf30506241eb11604bcb84</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>39f51cc31bbf30506241eb11604bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>hospital/radius/{{action.qbc_zip}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=39f51cc31bbf30506241eb11604bcb84"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=39f51cc31bbf30506241eb11604bcb84"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=39f51cc31bbf30506241eb11604bcb84^sys_idNOT INb5f51cc31bbf30506241eb11604bcb9b"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>resource_path</input_name>
+        <instance>39f51cc31bbf30506241eb11604bcb84</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"resource_path":{"scriptActive":false}}</script>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>b5f51cc31bbf30506241eb11604bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_39f51cc31bbf30506241eb11604bcb84"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Query Bed Count - JSON Parser">f9f51cc31bbf30506241eb11604bcb68</action>
+        <cid>ded6dac0-a28f-49a6-b9d0-706468516d75</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>79f51cc31bbf30506241eb11604bcba3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=79f51cc31bbf30506241eb11604bcba3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>79f51cc31bbf30506241eb11604bcba3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>79f51cc31bbf30506241eb11604bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>79f51cc31bbf30506241eb11604bcba3</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>b5f51cc31bbf30506241eb11604bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <value>{"status":true,"data":[{"Zip":"20876","Name":"HOLY CROSS GERMANTOWN HOSPITAL","Address":"19801 OBSERVATION DRIVE","City":"GERMANTOWN","State":"MD","telephone":"(301) 557-6020","latitude":"39.1806801590001","longitude":"-77.242257208","website":"NOT AVAILABLE","beds":"93","naics_desc":"GENERAL MEDICAL AND SURGICAL HOSPITALS","helipad":"N","population":"93","county":"MONTGOMERY","distance":"3.7574679708458545"}]}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>79f51cc31bbf30506241eb11604bcba3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>f1f51cc31bbf30506241eb11604bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"status","children":[],"type":"string","jpath":"$.status","previewValue":"true"},{"name":"data","children":[{"name":"data_object","children":[{"name":"Zip","children":[],"type":"string","jpath":"$.data[*].Zip","previewValue":"20876"},{"name":"Name","children":[],"type":"string","jpath":"$.data[*].Name","previewValue":"HOLY CROSS GERMANTOWN HOSPITAL"},{"name":"Address","children":[],"type":"string","jpath":"$.data[*].Address","previewValue":"19801 OBSERVATION DRIVE"},{"name":"City","children":[],"type":"string","jpath":"$.data[*].City","previewValue":"GERMANTOWN"},{"name":"State","children":[],"type":"string","jpath":"$.data[*].State","previewValue":"MD"},{"name":"telephone","children":[],"type":"string","jpath":"$.data[*].telephone","previewValue":"(301) 557-6020"},{"name":"latitude","children":[],"type":"string","jpath":"$.data[*].latitude","previewValue":"39.1806801590001"},{"name":"longitude","children":[],"type":"string","jpath":"$.data[*].longitude","previewValue":"-77.242257208"},{"name":"website","children":[],"type":"string","jpath":"$.data[*].website","previewValue":"NOT AVAILABLE"},{"name":"beds","children":[],"type":"string","jpath":"$.data[*].beds","previewValue":"93"},{"name":"naics_desc","children":[],"type":"string","jpath":"$.data[*].naics_desc","previewValue":"GENERAL MEDICAL AND SURGICAL HOSPITALS"},{"name":"helipad","children":[],"type":"string","jpath":"$.data[*].helipad","previewValue":"N"},{"name":"population","children":[],"type":"string","jpath":"$.data[*].population","previewValue":"93"},{"name":"county","children":[],"type":"string","jpath":"$.data[*].county","previewValue":"MONTGOMERY"},{"name":"distance","children":[],"type":"string","jpath":"$.data[*].distance","previewValue":"3.7574679708458545"}],"type":"object","jpath":"$.data[*]","previewValue":""}],"type":"array.object","jpath":"$.data[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_79f51cc31bbf30506241eb11604bcba3^id=79f51cc31bbf30506241eb11604bcba3"/>
+    <sys_element_mapping action="delete_multiple" query="id=79f51cc31bbf30506241eb11604bcba3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>79f51cc31bbf30506241eb11604bcba3</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>bdf51cc31bbf30506241eb11604bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>79f51cc31bbf30506241eb11604bcba3</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>71f51cc31bbf30506241eb11604bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>79f51cc31bbf30506241eb11604bcba3</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>39f51cc31bbf30506241eb11604bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[64bd253b-1cbf-48fc-a006-002377430ea9].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>79f51cc31bbf30506241eb11604bcba3</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>f9f51cc31bbf30506241eb11604bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=79f51cc31bbf30506241eb11604bcba3"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=79f51cc31bbf30506241eb11604bcba3^sys_idNOT IN39f51cc31bbf30506241eb11604bcba8"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDf1f51cc344bf30506ea191c054c2e3a6,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=c95379a3-4568-46aa-9fed-ab81d6e8e177</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">79f51cc31bbf30506241eb11604bcba3</model>
+        <model_id>79f51cc31bbf30506241eb11604bcba3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_79f51cc31bbf30506241eb11604bcba3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>39f51cc31bbf30506241eb11604bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=79f51cc31bbf30506241eb11604bcba3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_79f51cc31bbf30506241eb11604bcba3^sys_idNOT INb9f51cc31bbf30506241eb11604bcbae"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_79f51cc31bbf30506241eb11604bcba3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>b9f51cc31bbf30506241eb11604bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>root</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_79f51cc31bbf30506241eb11604bcba3_root_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=f9f51cc31bbf30506241eb11604bcb68^sys_idNOT INb9f51cc31bbf30506241eb11604bcb7b,f1f51cc31bbf30506241eb11604bcb74,fdf51cc31bbf30506241eb11604bcb6b"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c2a35518-364f-463d-a60c-5a76267e77ee</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>qbc_key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Key</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">f9f51cc31bbf30506241eb11604bcb68</model>
+        <model_id>f9f51cc31bbf30506241eb11604bcb68</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>b9f51cc31bbf30506241eb11604bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b9f51cc31bbf30506241eb11604bcb7b"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2728e908-b964-43e4-8a21-297feff38773</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>qbc_radius</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Radius</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">f9f51cc31bbf30506241eb11604bcb68</model>
+        <model_id>f9f51cc31bbf30506241eb11604bcb68</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>f1f51cc31bbf30506241eb11604bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f1f51cc31bbf30506241eb11604bcb74"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b60bd61d-3e3c-4804-b341-6034ecfe1cfe</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>qbc_zip</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Zip</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">f9f51cc31bbf30506241eb11604bcb68</model>
+        <model_id>f9f51cc31bbf30506241eb11604bcb68</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>fdf51cc31bbf30506241eb11604bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fdf51cc31bbf30506241eb11604bcb6b"/>
+    <sys_hub_action_output action="delete_multiple" query="model=f9f51cc31bbf30506241eb11604bcb68^sys_idNOT IN02f51cc31bbf30506241eb11604bcbda,f1f51cc31bbf30506241eb11604bcbb9,f5f51cc31bbf30506241eb11604bcbc1"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDbdf51cc33ebf30508158c6b0c431b7b6,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=ded6dac0-a28f-49a6-b9d0-706468516d75,sourceType=step,sourceUiUniqueId=c95379a3-4568-46aa-9fed-ab81d6e8e177,uiType=object,uiTypeLabel=Object,uiUniqueId=a482ebf1-c863-46af-a87f-bf60fa9a4640</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>qbc</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>QBC</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">f9f51cc31bbf30506241eb11604bcb68</model>
+        <model_id>f9f51cc31bbf30506241eb11604bcb68</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>02f51cc31bbf30506241eb11604bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=02f51cc31bbf30506241eb11604bcbda"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=02f51cc31bbf30506241eb11604bcbda"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD7df51cc3cdbf305089708135dde7dbb4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3f6b5812-f9bf-4f7f-8693-7ed4e918022a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Query Bed Count - JSON Parser">f9f51cc31bbf30506241eb11604bcb68</model>
+        <model_id>f9f51cc31bbf30506241eb11604bcb68</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>f1f51cc31bbf30506241eb11604bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f1f51cc31bbf30506241eb11604bcbb9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f1f51cc31bbf30506241eb11604bcbb9"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e033e82a-634d-4d3a-9e9a-351d69c03c40,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Query Bed Count - JSON Parser">f9f51cc31bbf30506241eb11604bcb68</model>
+        <model_id>f9f51cc31bbf30506241eb11604bcb68</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>f5f51cc31bbf30506241eb11604bcbc1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f5f51cc31bbf30506241eb11604bcbc1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f5f51cc31bbf30506241eb11604bcbc1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f9f51cc31bbf30506241eb11604bcb68"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=f9f51cc31bbf30506241eb11604bcb68^sys_idNOT IN0af51cc31bbf30506241eb11604bcbe6"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Query Bed Count - JSON Parser">f9f51cc31bbf30506241eb11604bcb68</action_type_id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>0af51cc31bbf30506241eb11604bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=0af51cc31bbf30506241eb11604bcbe6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68^sys_idNOT IN35f51cc31bbf30506241eb11604bcb7a,7df51cc31bbf30506241eb11604bcb72,f9f51cc31bbf30506241eb11604bcb81"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>qbc_radius</element>
+        <help/>
+        <hint/>
+        <label>Radius</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>35f51cc31bbf30506241eb11604bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Radius</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68_qbc_radius_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>qbc_zip</element>
+        <help/>
+        <hint/>
+        <label>Zip</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>7df51cc31bbf30506241eb11604bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Zip</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68_qbc_zip_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>qbc_key</element>
+        <help/>
+        <hint/>
+        <label>Key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:07</sys_created_on>
+        <sys_id>f9f51cc31bbf30506241eb11604bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Key</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68_qbc_key_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_f9f51cc31bbf30506241eb11604bcb68"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68^sys_idNOT IN46f51cc31bbf30506241eb11604bcbe0,71f51cc31bbf30506241eb11604bcbc0,8af51cc31bbf30506241eb11604bcbd8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>qbc</element>
+        <help/>
+        <hint/>
+        <label>QBC</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>46f51cc31bbf30506241eb11604bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>QBC</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68_qbc_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>71f51cc31bbf30506241eb11604bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68___action_status___en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 18:45:08</sys_created_on>
+        <sys_id>8af51cc31bbf30506241eb11604bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68___dont_treat_as_error___en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:45:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_f9f51cc31bbf30506241eb11604bcb68"/>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>21c2184f1b7f30506241eb11604bcb8f</sys_id>
+        <latest_snapshot>f9f51cc31bbf30506241eb11604bcb68</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Request Bed Information" max_length="40" name="x_602216_covid19_0_req_bed_info" sizeclass="4" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Key" max_length="32" name="api_key" reference="x_602216_covid19_0_api_key_information" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Radius (miles)" max_length="2" name="radius_miles" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requestor" max_length="32" name="requestor" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element default="COVID, COVID-19, Beds, Hospitals," label="Short description" max_length="40" name="short_description" type="string"/>
+        <element label="Zip Code" max_length="10" name="zip_code" type="string"/>
+        <index name="index">
+            <element name="api_key"/>
+        </index>
+        <index name="index2">
+            <element name="requestor"/>
+        </index>
+    </element>
+</database>

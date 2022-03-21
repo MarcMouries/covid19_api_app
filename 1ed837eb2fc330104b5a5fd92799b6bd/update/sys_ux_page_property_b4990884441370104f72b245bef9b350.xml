@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>listConfigId</name>
+        <page display_value="Available Beds">7c990884c4137010b9547e628645d34f</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-14 13:37:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>b4990884441370104f72b245bef9b350</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>listConfigId</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_ux_page_property_b4990884441370104f72b245bef9b350</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 13:37:51</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_602216_covid19_0.7c990884c4137010b9547e628645d34f.root.listConfigId</unique_name>
+        <value>d59908842f1370104b5a5fd92799b686</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=b4990884441370104f72b245bef9b350"/>
+</record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>listConfigId</name>
+        <page display_value="HOSP Workspace">9fbb791fb0f3f0501dfcf1d457a23de0</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-18 20:48:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>d7bb791f03f3f050fabd341ab994e7e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>listConfigId</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_ux_page_property_d7bb791f03f3f050fabd341ab994e7e1</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-18 20:48:16</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_602216_covid19_0.9fbb791fb0f3f0501dfcf1d457a23de0.root.listConfigId</unique_name>
+        <value>6bbbb91f1bf3f0506241eb11604bcb24</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="DELETE" query="documentkey=d7bb791f03f3f050fabd341ab994e7e1"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</application>
+        <file_path/>
+        <instance_id>13f0ea84db076c10566750b6f4961941</instance_id>
+        <instance_name>kljonesdemo1224</instance_name>
+        <name>sys_ux_page_property_d7bb791f03f3f050fabd341ab994e7e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>listConfigId</name><page display_value="HOSP Workspace">9fbb791fb0f3f0501dfcf1d457a23de0</page><required_translations>[]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>kjones</sys_created_by><sys_created_on>2021-11-18 20:48:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>d7bb791f03f3f050fabd341ab994e7e1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>listConfigId</sys_name><sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package><sys_policy/><sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope><sys_update_name>sys_ux_page_property_d7bb791f03f3f050fabd341ab994e7e1</sys_update_name><sys_updated_by>kjones</sys_updated_by><sys_updated_on>2021-11-18 20:48:16</sys_updated_on><type>string</type><unique_name>x_602216_covid19_0.9fbb791fb0f3f0501dfcf1d457a23de0.root.listConfigId</unique_name><value>6bbbb91f1bf3f0506241eb11604bcb24</value></sys_ux_page_property><sys_translated_text action="delete_multiple" query="documentkey=d7bb791f03f3f050fabd341ab994e7e1"/></record_update>]]></payload>
+        <payload_hash>-1960108587</payload_hash>
+        <record_name>listConfigId</record_name>
+        <reverted_from/>
+        <source>07e90aa69793b4d097ee3e0e6253aff4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-18 20:48:16</sys_created_on>
+        <sys_id>afbbb91f1bf3f0506241eb11604bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d34cea2230000001</sys_recorded_at>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-18 20:48:16</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>a7bbb91fb8f3f0503eb18c392377f337</update_guid>
+        <update_guid_history>a7bbb91fb8f3f0503eb18c392377f337:-1960108587,e3bbb91f61f3f050cd387f509c0f2436:2029107453</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-22 23:14:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>057a198f1f6e41a083803fc046fc8391</sys_id>
+        <sys_metadata>d7bb791f03f3f050fabd341ab994e7e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>listConfigId</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_scope_delete display_value="">492726965bfb4f379cc40f7801cc6b09</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_d7bb791f03f3f050fabd341ab994e7e1</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_d7bb791f03f3f050fabd341ab994e7e1">afbbb91f1bf3f0506241eb11604bcb37</sys_update_version>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-22 23:14:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

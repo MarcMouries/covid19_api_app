@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>x_602216_covid19_0.Bed_Availability_API_Key</id>
+        <multiple_connections>false</multiple_connections>
+        <name>Bed Availability API Key</name>
+        <parent/>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2022-03-17 12:29:45</sys_created_on>
+        <sys_id>8baef0a11b120510ce2b6579b04bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_602216_covid19_0.Bed_Availability_API_Key</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_alias_8baef0a11b120510ce2b6579b04bcbff</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2022-03-17 12:29:45</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</application>
+        <file_path/>
+        <instance_id>9e5e7297dbf290d89a4dcac5059619d0</instance_id>
+        <instance_name>appengine4gov</instance_name>
+        <name>sys_alias_8baef0a11b120510ce2b6579b04bcbff</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template/><connection_type>http_connection</connection_type><id>x_602216_covid19_0.Bed_Availability_API_Key</id><multiple_connections>false</multiple_connections><name>Bed Availability API Key</name><parent/><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>Marc.Mouries</sys_created_by><sys_created_on>2022-03-17 12:29:45</sys_created_on><sys_id>8baef0a11b120510ce2b6579b04bcbff</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_602216_covid19_0.Bed_Availability_API_Key</sys_name><sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package><sys_policy/><sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope><sys_update_name>sys_alias_8baef0a11b120510ce2b6579b04bcbff</sys_update_name><sys_updated_by>Marc.Mouries</sys_updated_by><sys_updated_on>2022-03-17 12:29:45</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+        <payload_hash>-739732413</payload_hash>
+        <record_name>x_602216_covid19_0.Bed_Availability_API_Key</record_name>
+        <reverted_from/>
+        <source>e3d93c291bdec110ce2b6579b04bcbb9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2022-03-17 12:29:45</sys_created_on>
+        <sys_id>11deb0a11b120510ce2b6579b04bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f97dafd010000001</sys_recorded_at>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2022-03-17 12:29:45</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>19deb0a1c7120510738e0504c5cc10f0</update_guid>
+        <update_guid_history>19deb0a1c7120510738e0504c5cc10f0:-739732413</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2022-03-17 12:30:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>04d0c15eea4d41158397c9efb3271ac9</sys_id>
+        <sys_metadata>8baef0a11b120510ce2b6579b04bcbff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_602216_covid19_0.Bed_Availability_API_Key</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_scope_delete display_value="">492726965bfb4f379cc40f7801cc6b09</sys_scope_delete>
+        <sys_update_name>sys_alias_8baef0a11b120510ce2b6579b04bcbff</sys_update_name>
+        <sys_update_version display_value="sys_alias_8baef0a11b120510ce2b6579b04bcbff">11deb0a11b120510ce2b6579b04bcbf1</sys_update_version>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2022-03-17 12:30:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

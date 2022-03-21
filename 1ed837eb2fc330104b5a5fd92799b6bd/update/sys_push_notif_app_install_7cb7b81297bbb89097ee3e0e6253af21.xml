@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <last_registered_on>2022-03-03 10:09:59</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-15 13:17:04</sys_created_on>
+        <sys_id>7cb7b81297bbb89097ee3e0e6253af21</sys_id>
+        <sys_mod_count>1642</sys_mod_count>
+        <sys_name>e4cvWFXhTdOg-3JrFgdfVb:APA91bEwBNq6niX6BzbIRx7NFPOOkiCVId9BGpL1uTBKhA5-Ojy1cuuOWYegDVgFQ914MQjwZnYQsz0XxoPCgFCys2OWwLIyVWGQYb7LOfsuTSLkzgLRSbmbi_d9sMxluS0XSyJp5cNL</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Request Application">ac7f61d273122300d63a566a4cf6a78b</sys_push_application_id>
+        <sys_push_platform_id display_value="Google">53e75f30ff0002009738ffffffffff12</sys_push_platform_id>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_7cb7b81297bbb89097ee3e0e6253af21</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-03-03 10:09:59</sys_updated_on>
+        <sys_user_id display_value="Kenneth Jones">57996d971ba67810b93654a2604bcb55</sys_user_id>
+        <token>e4cvWFXhTdOg-3JrFgdfVb:APA91bEwBNq6niX6BzbIRx7NFPOOkiCVId9BGpL1uTBKhA5-Ojy1cuuOWYegDVgFQ914MQjwZnYQsz0XxoPCgFCys2OWwLIyVWGQYb7LOfsuTSLkzgLRSbmbi_d9sMxluS0XSyJp5cNL</token>
+    </sys_push_notif_app_install>
+</record_update>

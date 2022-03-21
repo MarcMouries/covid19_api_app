@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access/>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>false</create_access_controls>
+        <delete_access>false</delete_access>
+        <extension_model/>
+        <is_extendable>false</is_extendable>
+        <label>Covid19 0 1637268135917</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_602216_covid19_0_1637268135917</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Import Set Row" name="sys_import_set_row">4384aa841b03201041016286624bcbee</super_class>
+        <sys_class_code/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path/>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-18 20:42:16</sys_created_on>
+        <sys_id>235af95b1bf3f0506241eb11604bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Covid19 0 1637268135917</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_db_object_235af95b1bf3f0506241eb11604bcbfc</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-18 20:42:16</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role/>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</application>
+        <file_path/>
+        <instance_id>13f0ea84db076c10566750b6f4961941</instance_id>
+        <instance_name>kljonesdemo1224</instance_name>
+        <name>sys_db_object_235af95b1bf3f0506241eb11604bcbfc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Covid19 0 1637268135917</label><live_feed_enabled>false</live_feed_enabled><name>x_602216_covid19_0_1637268135917</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Import Set Row" name="sys_import_set_row">4384aa841b03201041016286624bcbee</super_class><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>kjones</sys_created_by><sys_created_on>2021-11-18 20:42:16</sys_created_on><sys_id>235af95b1bf3f0506241eb11604bcbfc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Covid19 0 1637268135917</sys_name><sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package><sys_policy/><sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope><sys_update_name>sys_db_object_235af95b1bf3f0506241eb11604bcbfc</sys_update_name><sys_updated_by>kjones</sys_updated_by><sys_updated_on>2021-11-18 20:42:16</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>1229630156</payload_hash>
+        <record_name>Covid19 0 1637268135917</record_name>
+        <reverted_from/>
+        <source>07e90aa69793b4d097ee3e0e6253aff4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-18 20:42:17</sys_created_on>
+        <sys_id>3b5a3d5b1bf3f0506241eb11604bcb2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d34c9253e0000001</sys_recorded_at>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-18 20:42:17</sys_updated_on>
+        <type>Table</type>
+        <update_guid>b35a3d5b47f3f05001ae508486b7952a</update_guid>
+        <update_guid_history>b35a3d5b47f3f05001ae508486b7952a:1229630156</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-18 20:44:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>6bcccef26a994eafb0716bda1b5fb839</sys_id>
+        <sys_metadata>235af95b1bf3f0506241eb11604bcbfc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Covid19 0 1637268135917</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_scope_delete display_value="">492726965bfb4f379cc40f7801cc6b09</sys_scope_delete>
+        <sys_update_name>sys_db_object_235af95b1bf3f0506241eb11604bcbfc</sys_update_name>
+        <sys_update_version display_value="sys_db_object_235af95b1bf3f0506241eb11604bcbfc">3b5a3d5b1bf3f0506241eb11604bcb2a</sys_update_version>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-18 20:44:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

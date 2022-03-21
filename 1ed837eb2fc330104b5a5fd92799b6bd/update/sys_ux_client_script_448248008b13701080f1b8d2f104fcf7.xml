@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Landing Page">c88288003d13701023c8603288d97f05</macroponent>
+        <name>My task page redirection</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const {
+        state,
+        emit,
+        data
+    } = api;
+    let sysId = "";
+    let table = "";
+    try {
+        sysId = data.look_up_record_3.result.sysapproval.value;
+        let tableDisplayValue = data.look_up_record_3.result.sysapproval.displayValue;
+        let tableStartsWith = tableDisplayValue.substring(0, 3);
+
+        if (tableStartsWith == "INC") {
+            table = "incident";
+        }else if (tableStartsWith == "RIT") {
+            table = "sc_req_item";
+        } else {
+            table = "task";
+        }
+
+        if (state.taskcard && sysId) {
+            api.setState("taskcard", "");
+            emit('NAV_ITEM_SELECTED', {
+                route: "rec_task",
+                fields: {
+                    table,
+                    sysId,
+                    approvalId: api.state.taskcard
+                }
+            });
+        }
+    } catch (e) {}
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-10-14 13:06:57</sys_created_on>
+        <sys_id>448248008b13701080f1b8d2f104fcf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My task page redirection</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_ux_client_script_448248008b13701080f1b8d2f104fcf7</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-14 13:06:57</sys_updated_on>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

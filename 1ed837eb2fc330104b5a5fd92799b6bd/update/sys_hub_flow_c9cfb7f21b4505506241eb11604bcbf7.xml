@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-Thu_Sep_16_10_10_57_IST_2021.zip</compiler_build>
+        <copied_from>daa01b77db31705094099d62ba961967</copied_from>
+        <copied_from_name>Export Incident Record Work note</copied_from_name>
+        <description>&lt;/p&gt;This flow will update the latest comments and work notes of incident on the configured remote instance.&lt;/p&gt;
+</description>
+        <internal_name>export_incident_record_work_notes_and_comments</internal_name>
+        <label_cache>[{"name":"cfccc1cd-536c-4156-b219-3100c8a30268.importset_record","label":"2➛Import set record","reference_display":"Import set record","type":"object","base_type":"object","attributes":{"sourceId":"53cb2571-8a62-4db6-9143-81cf9c57dcfb","uiTypeLabel":"Object","co_type_name":"FD91665b84c06110104a781c402769bad2","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"3ea6a0ea-2137-4b96-a7ed-dd46399daa01","uiType":"object","uiUniqueId":"b6adb9dd-98d2-43ca-968d-205d5c411e4a"}},{"name":"cfccc1cd-536c-4156-b219-3100c8a30268.target_record","label":"2➛Target record","reference_display":"Target record","type":"array.object","base_type":"array.object","attributes":{"sourceId":"53cb2571-8a62-4db6-9143-81cf9c57dcfb","child_name":"record_0","uiUniqueId":"9ac085f5-8117-4c8a-876c-5528901e49c7","uiTypeLabel":"Array.Object","co_type_name":"FDd5665b84016110108474682a7f9026d0","child_label":"Record_0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"eadf8fba-d3c2-4de8-85d9-fd1d11b6dd36","uiType":"array.object","child_type":"object","child_uiUniqueId":"93857b95-c957-4633-a6aa-9c0718ff3ce6"}},{"name":"cfccc1cd-536c-4156-b219-3100c8a30268.error_message","label":"2➛Error message","reference_display":"Error message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bf1f5481-ae24-4a4c-be60-dcc6ced82282"}},{"name":"cfccc1cd-536c-4156-b219-3100c8a30268.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bd10e700-d0b9-4e78-bf06-4e5f13ebe8f7"}},{"name":"e5a2ecf8-53ba-48b5-915a-b11da9b0e8c4.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"ff64b312-68a4-41c0-a973-a99cde95564e"}},{"name":"e5a2ecf8-53ba-48b5-915a-b11da9b0e8c4.comment","label":"1➛Comment","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"b6e0fda2-1800-433a-800e-a5ad68ebf6fd"}},{"name":"e5a2ecf8-53ba-48b5-915a-b11da9b0e8c4.work_note","label":"1➛Work Note","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"320c03ff-3cf5-4d46-b708-3f2d917559ff"}},{"name":"Created or Updated_1.current","label":"Trigger➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{}},{"name":"ed1107df-1822-4ad2-9461-310f537106de.work_note","label":"1➛Work Note","reference_display":"Work Note","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"320c03ff-3cf5-4d46-b708-3f2d917559ff"}},{"name":"ed1107df-1822-4ad2-9461-310f537106de.comment","label":"1➛Comment","reference_display":"Comment","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b6e0fda2-1800-433a-800e-a5ad68ebf6fd"}},{"name":"Created or Updated_1.current.sys_class_name","label":"Trigger➛Incident Record➛Task type","reference":"","reference_display":"Task type","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"sys_class_name"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created or Updated_1.current.sys_mod_count","label":"Trigger➛Incident Record➛Updates","reference":"","reference_display":"Updates","type":"integer","base_type":"integer","parent_table_name":"incident","column_name":"sys_mod_count"},{"name":"d036ac90-187d-4a2c-8129-b276af11944c.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bd10e700-d0b9-4e78-bf06-4e5f13ebe8f7"}},{"name":"d036ac90-187d-4a2c-8129-b276af11944c.error_message","label":"1➛Error message","reference_display":"Error message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bf1f5481-ae24-4a4c-be60-dcc6ced82282"}},{"name":"d036ac90-187d-4a2c-8129-b276af11944c.target_record","label":"1➛Target record","reference_display":"Target record","type":"array.object","base_type":"array.object","attributes":{"sourceId":"53cb2571-8a62-4db6-9143-81cf9c57dcfb","child_name":"record_0","uiUniqueId":"9ac085f5-8117-4c8a-876c-5528901e49c7","uiTypeLabel":"Array.Object","co_type_name":"FDd5665b84016110108474682a7f9026d0","child_label":"Record_0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"eadf8fba-d3c2-4de8-85d9-fd1d11b6dd36","uiType":"array.object","child_type":"object","child_uiUniqueId":"93857b95-c957-4633-a6aa-9c0718ff3ce6"}},{"name":"d036ac90-187d-4a2c-8129-b276af11944c.importset_record","label":"1➛Import set record","reference_display":"Import set record","type":"object","base_type":"object","attributes":{"sourceId":"53cb2571-8a62-4db6-9143-81cf9c57dcfb","uiTypeLabel":"Object","co_type_name":"FD91665b84c06110104a781c402769bad2","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"3ea6a0ea-2137-4b96-a7ed-dd46399daa01","uiType":"object","uiUniqueId":"b6adb9dd-98d2-43ca-968d-205d5c411e4a"}},{"name":"Created or Updated_1.current.number","label":"Trigger➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident","column_name":"number"},{"name":"ed1107df-1822-4ad2-9461-310f537106de.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ed1107df-1822-4ad2-9461-310f537106de.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d036ac90-187d-4a2c-8129-b276af11944c.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d036ac90-187d-4a2c-8129-b276af11944c.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ed1107df-1822-4ad2-9461-310f537106de.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ff64b312-68a4-41c0-a973-a99cde95564e"}},{"name":"Created_1.current.sys_class_name","label":"Trigger➛Incident Record➛Task type","reference":"","reference_display":"Task type","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"sys_class_name"},{"name":"Created_1.current.sys_id","label":"Trigger➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created_1.current.sys_mod_count","label":"Trigger➛Incident Record➛Updates","reference":"","reference_display":"Updates","type":"integer","base_type":"integer","parent_table_name":"incident","column_name":"sys_mod_count"},{"name":"Created_1.current","label":"Trigger➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{}},{"name":"ed1107df-1822-4ad2-9461-310f537106de.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6217b51d-40e4-4a71-9bb8-cd5539b0be28"}},{"name":"cfccc1cd-536c-4156-b219-3100c8a30268.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cfccc1cd-536c-4156-b219-3100c8a30268.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Export Incident Record Work notes and Comments</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c9cfb7f21b4505506241eb11604bcbf7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Export Incident Record Work notes and Comments</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_hub_flow_c9cfb7f21b4505506241eb11604bcbf7</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:48:43</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c9cfb7f21b4505506241eb11604bcbf7^sys_idNOT IN51cff7f21b4505506241eb11604bcb62"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Export Incident Record Work notes and Comments">c9cfb7f21b4505506241eb11604bcbf7</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>51cff7f21b4505506241eb11604bcb62</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:48:43</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=51cff7f21b4505506241eb11604bcb62"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>51cff7f21b4505506241eb11604bcb62</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>19cff7f21b4505506241eb11604bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:38</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>51cff7f21b4505506241eb11604bcb62</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>55cff7f21b4505506241eb11604bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:38</sys_updated_on>
+        <value/>
+        <variable display_value="Run flow In">231e76460f103300b599bca2ff767e11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>51cff7f21b4505506241eb11604bcb62</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>91cff7f21b4505506241eb11604bcb63</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:48:43</sys_updated_on>
+        <value>assigned_to=dc8136ce1bc3e81041016286624bcb2d</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>51cff7f21b4505506241eb11604bcb62</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>ddcff7f21b4505506241eb11604bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:38</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=51cff7f21b4505506241eb11604bcb62"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c9cfb7f21b4505506241eb11604bcbf7^sys_idNOT IN85cfb7f21b4505506241eb11604bcbf9"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c9cfb7f21b4505506241eb11604bcbf7</id>
+        <name>Export Incident Record Work notes and Comments</name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:37</sys_created_on>
+        <sys_id>85cfb7f21b4505506241eb11604bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=85cfb7f21b4505506241eb11604bcbf9"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c9cfb7f21b4505506241eb11604bcbf7^sys_idNOT IN1dcff7f21b4505506241eb11604bcb1c,81cff7f21b4505506241eb11604bcb02,d5cff7f21b4505506241eb11604bcb16"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD70d4404fc04505506b97bf173219abcf,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Export Incident Record Work notes and Comments">c9cfb7f21b4505506241eb11604bcbf7</model>
+        <model_id>c9cfb7f21b4505506241eb11604bcbf7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:37</sys_created_on>
+        <sys_id>1dcff7f21b4505506241eb11604bcb1c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:48:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Export Incident Record Work notes and Comments">c9cfb7f21b4505506241eb11604bcbf7</model>
+        <model_id>c9cfb7f21b4505506241eb11604bcbf7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:37</sys_created_on>
+        <sys_id>81cff7f21b4505506241eb11604bcb02</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:48:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Export Incident Record Work notes and Comments">c9cfb7f21b4505506241eb11604bcbf7</model>
+        <model_id>c9cfb7f21b4505506241eb11604bcbf7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:37</sys_created_on>
+        <sys_id>d5cff7f21b4505506241eb11604bcb16</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:48:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c9cfb7f21b4505506241eb11604bcbf7^sys_idNOT IN51cff7f21b4505506241eb11604bcb34,91cff7f21b4505506241eb11604bcb60"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look up Comments/Worknote">b7c262e7dbf1305094099d62ba96192e</action_type>
+        <action_type_parent display_value="Look up Comments/Worknote">aa42a6a7dbf1305094099d62ba9619de</action_type_parent>
+        <comment>Fetches Comments/Worknotes</comment>
+        <compiled_snapshot>b7c262e7dbf1305094099d62ba96192e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Export Incident Record Work notes and Comments">c9cfb7f21b4505506241eb11604bcbf7</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>51cff7f21b4505506241eb11604bcb34</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:48:43</sys_updated_on>
+        <ui_id>ed1107df-1822-4ad2-9461-310f537106de</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=51cff7f21b4505506241eb11604bcb34"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>51cff7f21b4505506241eb11604bcb34</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>51cff7f21b4505506241eb11604bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:38</sys_updated_on>
+        <value/>
+        <variable display_value="Update Number">80d262e7dbf1305094099d62ba96193b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=51cff7f21b4505506241eb11604bcb34"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record_sys_id</field>
+        <id>51cff7f21b4505506241eb11604bcb34</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>d1cff7f21b4505506241eb11604bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b7c262e7dbf1305094099d62ba96192e</table>
+        <value>{{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>51cff7f21b4505506241eb11604bcb34</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>ddcff7f21b4505506241eb11604bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b7c262e7dbf1305094099d62ba96192e</table>
+        <value>{{Created or Updated_1.current.sys_class_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>update_number</field>
+        <id>51cff7f21b4505506241eb11604bcb34</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>1dcff7f21b4505506241eb11604bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b7c262e7dbf1305094099d62ba96192e</table>
+        <value>{{Created or Updated_1.current.sys_mod_count}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=51cff7f21b4505506241eb11604bcb34"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=51cff7f21b4505506241eb11604bcb34"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Export Incident Record">3673cd51931510106b543511e57ffbad</action_type>
+        <action_type_parent display_value="Export Incident Record">c39b5b1593cd18106b543511e57ffb1e</action_type_parent>
+        <comment/>
+        <compiled_snapshot>3673cd51931510106b543511e57ffbad</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Export Incident Record Work notes and Comments">c9cfb7f21b4505506241eb11604bcbf7</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>91cff7f21b4505506241eb11604bcb60</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:48:43</sys_updated_on>
+        <ui_id>cfccc1cd-536c-4156-b219-3100c8a30268</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=91cff7f21b4505506241eb11604bcb60"/>
+    <sys_element_mapping action="delete_multiple" query="id=91cff7f21b4505506241eb11604bcb60"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>override_fields</field>
+        <id>91cff7f21b4505506241eb11604bcb60</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>59cff7f21b4505506241eb11604bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3673cd51931510106b543511e57ffbad</table>
+        <value>work_notes={{ed1107df-1822-4ad2-9461-310f537106de.work_note}}^comments={{ed1107df-1822-4ad2-9461-310f537106de.comment}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>91cff7f21b4505506241eb11604bcb60</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:38</sys_created_on>
+        <sys_id>1dcff7f21b4505506241eb11604bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3673cd51931510106b543511e57ffbad</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=91cff7f21b4505506241eb11604bcb60"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=91cff7f21b4505506241eb11604bcb60"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7^sys_idNOT IN51cff7f21b4505506241eb11604bcb15,91cff7f21b4505506241eb11604bcb22,95cff7f21b4505506241eb11604bcb1b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:37</sys_created_on>
+        <sys_id>51cff7f21b4505506241eb11604bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7_table_name_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:37</sys_created_on>
+        <sys_id>91cff7f21b4505506241eb11604bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7_changed_fields_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 20:26:37</sys_created_on>
+        <sys_id>95cff7f21b4505506241eb11604bcb1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7_current_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 20:26:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c9cfb7f21b4505506241eb11604bcbf7"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c9cfb7f21b4505506241eb11604bcbf7"/>
+</record_update>

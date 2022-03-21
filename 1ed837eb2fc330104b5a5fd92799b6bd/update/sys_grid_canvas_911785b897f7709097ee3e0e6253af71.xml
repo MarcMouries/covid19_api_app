@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA COVID-19 DASHBOARD - New Tab">951785b897f7709097ee3e0e6253af6f</legacy_page>
+        <name>PA COVID-19 DASHBOARD - New Tab</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-10 22:33:23</sys_created_on>
+        <sys_id>911785b897f7709097ee3e0e6253af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA COVID-19 DASHBOARD - New Tab</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_grid_canvas_911785b897f7709097ee3e0e6253af71</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-10 22:33:23</sys_updated_on>
+    </sys_grid_canvas>
+</record_update>

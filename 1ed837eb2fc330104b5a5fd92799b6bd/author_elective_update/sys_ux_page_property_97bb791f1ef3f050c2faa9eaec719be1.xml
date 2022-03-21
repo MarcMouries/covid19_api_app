@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>Contains references to global search configurations to be consumed by search components</description>
+        <name>global_search_configurations</name>
+        <page display_value="">9fbb791fb0f3f0501dfcf1d457a23de0</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-18 20:48:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>97bb791f1ef3f050c2faa9eaec719be1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global_search_configurations</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_ux_page_property_97bb791f1ef3f050c2faa9eaec719be1</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-18 20:48:15</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_602216_covid19_0.9fbb791fb0f3f0501dfcf1d457a23de0.root.global_search_configurations</unique_name>
+        <value>{&#13;
+    "globalSearchViewConfigId": "97a574ea53c0130084acddeeff7b12a6",&#13;
+"globalSearchRoute": "search"&#13;
+}</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</application>
+        <file_path/>
+        <instance_id>13f0ea84db076c10566750b6f4961941</instance_id>
+        <instance_name>kljonesdemo1224</instance_name>
+        <name>sys_ux_page_property_97bb791f1ef3f050c2faa9eaec719be1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>Contains references to global search configurations to be consumed by search components</description><name>global_search_configurations</name><page display_value="">9fbb791fb0f3f0501dfcf1d457a23de0</page><required_translations>[]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>kjones</sys_created_by><sys_created_on>2021-11-18 20:48:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>97bb791f1ef3f050c2faa9eaec719be1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>global_search_configurations</sys_name><sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package><sys_policy/><sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope><sys_update_name>sys_ux_page_property_97bb791f1ef3f050c2faa9eaec719be1</sys_update_name><sys_updated_by>kjones</sys_updated_by><sys_updated_on>2021-11-18 20:48:15</sys_updated_on><type>json</type><unique_name>x_602216_covid19_0.9fbb791fb0f3f0501dfcf1d457a23de0.root.global_search_configurations</unique_name><value>{&#13;
+    "globalSearchViewConfigId": "97a574ea53c0130084acddeeff7b12a6",&#13;
+"globalSearchRoute": "search"&#13;
+}</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>467637743</payload_hash>
+        <record_name>global_search_configurations</record_name>
+        <reverted_from/>
+        <source>7cb48b221b1330107bc4cb72604bcbdd</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-10-22 21:40:11</sys_created_on>
+        <sys_id>3e8387641b000d506241eb11604bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ca9f272780000000</sys_recorded_at>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2022-03-17 12:07:50</sys_updated_on>
+        <type>UX Page Property</type>
+        <update_guid>fa838764db000d50e866d244e47ee9e5</update_guid>
+        <update_guid_history>fa838764db000d50e866d244e47ee9e5:467637743</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-22 23:14:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>3f8a7eeccc3443f8af52fe8d8e3c2e90</sys_id>
+        <sys_metadata>97bb791f1ef3f050c2faa9eaec719be1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global_search_configurations</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_scope_delete display_value="">492726965bfb4f379cc40f7801cc6b09</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_97bb791f1ef3f050c2faa9eaec719be1</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_97bb791f1ef3f050c2faa9eaec719be1">3e8387641b000d506241eb11604bcbe5</sys_update_version>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-22 23:14:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

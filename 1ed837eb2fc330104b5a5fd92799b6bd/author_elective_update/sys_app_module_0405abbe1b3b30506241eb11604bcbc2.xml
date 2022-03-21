@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Covid19 0 1637161869439</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_602216_covid19_0_1637161869439</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 15:11:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0405abbe1b3b30506241eb11604bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Covid19 0 1637161869439</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_app_module_0405abbe1b3b30506241eb11604bcbc2</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 15:11:12</sys_updated_on>
+        <timeline_page/>
+        <title>Covid19 0 1637161869439</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</application>
+        <file_path/>
+        <instance_id>13f0ea84db076c10566750b6f4961941</instance_id>
+        <instance_name>kljonesdemo1224</instance_name>
+        <name>sys_app_module_0405abbe1b3b30506241eb11604bcbc2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Covid19 0 1637161869439</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_602216_covid19_0_1637161869439</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>kjones</sys_created_by><sys_created_on>2021-11-17 15:11:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0405abbe1b3b30506241eb11604bcbc2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Covid19 0 1637161869439</sys_name><sys_overrides/><sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package><sys_policy/><sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope><sys_update_name>sys_app_module_0405abbe1b3b30506241eb11604bcbc2</sys_update_name><sys_updated_by>kjones</sys_updated_by><sys_updated_on>2021-11-17 15:11:12</sys_updated_on><timeline_page/><title>Covid19 0 1637161869439</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1868715293</payload_hash>
+        <record_name>Covid19 0 1637161869439</record_name>
+        <reverted_from/>
+        <source>07e90aa69793b4d097ee3e0e6253aff4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 15:11:12</sys_created_on>
+        <sys_id>4805abbe1b3b30506241eb11604bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d2e73ab0a0000001</sys_recorded_at>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 15:11:12</sys_updated_on>
+        <type>Module</type>
+        <update_guid>4005abbe3b3b3050812c04c464e60ec5</update_guid>
+        <update_guid_history>4005abbe3b3b3050812c04c464e60ec5:1868715293</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3455e7fe1b3b30506241eb11604bcba1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 15:12:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>da9a8e4d6cf34d898bec6954b04abf79</sys_id>
+        <sys_metadata>0405abbe1b3b30506241eb11604bcbc2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Covid19 0 1637161869439</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_scope_delete display_value="">492726965bfb4f379cc40f7801cc6b09</sys_scope_delete>
+        <sys_update_name>sys_app_module_0405abbe1b3b30506241eb11604bcbc2</sys_update_name>
+        <sys_update_version display_value="sys_app_module_0405abbe1b3b30506241eb11604bcbc2">4805abbe1b3b30506241eb11604bcbc5</sys_update_version>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 15:12:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

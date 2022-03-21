@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Hospital Availability" max_length="40" name="x_602216_covid19_0_hospital_availability" sizeclass="200" type="collection">
+        <element label="Address" max_length="120" name="address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Beds" max_length="40" name="beds" type="integer"/>
+        <element label="City" max_length="100" name="city" type="string"/>
+        <element label="County" max_length="100" name="county" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Distance" max_length="40" name="distance" type="float"/>
+        <element label="HELIPAD" max_length="40" name="helipad" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Latitude" max_length="40" name="latitude" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Longitude" max_length="40" name="longitude" type="float"/>
+        <element label="Map Location" max_length="32" name="map_location" read_only="true" reference="cmn_location" type="reference"/>
+        <element label="NAICS DESC" max_length="100" name="naics_desc" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Population" max_length="40" name="population" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="COVID, COVID-19, Beds, Hospitals" label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element label="Telephone" max_length="15" name="telephone" type="string"/>
+        <element label="Website" max_length="1024" name="website" type="url"/>
+        <element label="Zip" max_length="40" name="zip" type="string"/>
+        <index name="index">
+            <element name="map_location"/>
+        </index>
+    </element>
+</database>

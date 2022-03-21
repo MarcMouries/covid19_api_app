@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="API Key Information" max_length="40" name="x_602216_covid19_0_api_key_information" sizeclass="0" type="collection">
+        <element display="true" label="API Key" max_length="45" name="api_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Point (URL)" max_length="120" name="end_point" type="url"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Site Name" max_length="100" name="site_name" type="string"/>
+        <element label="Site URL" max_length="1024" name="site_url" type="url"/>
+    </element>
+</database>

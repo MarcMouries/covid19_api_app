@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 15:45:15</sys_created_on>
+        <sys_id>c3cca77e1b7b30506241eb11604bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_602216_covid19_0_hospital_available_beds.canvas_user</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_security_acl display_value="x_602216_covid19_0_hospital_available_beds">7ecca77e1b7b30506241eb11604bcb9a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c3cca77e1b7b30506241eb11604bcbdf</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 15:45:15</sys_updated_on>
+        <sys_user_role display_value="canvas_user" name="canvas_user">8536f54bc713330072b211d4d8c26080</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</application>
+        <file_path/>
+        <instance_id>13f0ea84db076c10566750b6f4961941</instance_id>
+        <instance_name>kljonesdemo1224</instance_name>
+        <name>sys_security_acl_role_c3cca77e1b7b30506241eb11604bcbdf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>kjones</sys_created_by><sys_created_on>2021-11-17 15:45:15</sys_created_on><sys_id>c3cca77e1b7b30506241eb11604bcbdf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_602216_covid19_0_hospital_available_beds.canvas_user</sys_name><sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package><sys_policy/><sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope><sys_security_acl display_value="x_602216_covid19_0_hospital_available_beds">7ecca77e1b7b30506241eb11604bcb9a</sys_security_acl><sys_update_name>sys_security_acl_role_c3cca77e1b7b30506241eb11604bcbdf</sys_update_name><sys_updated_by>kjones</sys_updated_by><sys_updated_on>2021-11-17 15:45:15</sys_updated_on><sys_user_role display_value="canvas_user" name="canvas_user">8536f54bc713330072b211d4d8c26080</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1825488407</payload_hash>
+        <record_name>x_602216_covid19_0_hospital_available_beds.canvas_user</record_name>
+        <reverted_from/>
+        <source>07e90aa69793b4d097ee3e0e6253aff4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 15:45:15</sys_created_on>
+        <sys_id>87cca77e1b7b30506241eb11604bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d2e92d9ae0000001</sys_recorded_at>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 15:45:15</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>8fcca77e4c7b3050ed05660cbdcf88e1</update_guid>
+        <update_guid_history>8fcca77e4c7b3050ed05660cbdcf88e1:-1825488407</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2874ff7a1bbb30506241eb11604bcb6f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-17 16:18:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0023bf5b31d3424283cc08bf2ca286d9</sys_id>
+        <sys_metadata>c3cca77e1b7b30506241eb11604bcbdf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_602216_covid19_0_hospital_available_beds.canvas_user</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_parent display_value="">7ecca77e1b7b30506241eb11604bcb9a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_scope_delete display_value="">492726965bfb4f379cc40f7801cc6b09</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_c3cca77e1b7b30506241eb11604bcbdf</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_c3cca77e1b7b30506241eb11604bcbdf">87cca77e1b7b30506241eb11604bcbe2</sys_update_version>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-17 16:18:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

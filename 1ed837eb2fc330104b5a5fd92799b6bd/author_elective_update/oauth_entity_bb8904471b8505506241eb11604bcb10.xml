@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="DELETE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>60</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>7b89044747850550a6b40125a4649410</client_id>
+        <client_secret>﷞﷟﷒0495c7401bc32010a47e54a3604bcb8c﷬﷔1﷬﷭EMnM92pkWI9iFu-cqoZEAQ==_cqIHVftHtPb7CPskV2Dg_G9cd__nv7jGMI=﷮﷯</client_secret>
+        <client_uuid>3b8904471b8505506241eb11604bcb10</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>password</default_grant_type>
+        <id_token_lifespan>86400</id_token_lifespan>
+        <logo_url/>
+        <message_signature_lifespan>60</message_signature_lifespan>
+        <name>KJONES-local-instance</name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url>https://kljonesdemo1224.service-now.com</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt/>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 21:13:04</sys_created_on>
+        <sys_id>bb8904471b8505506241eb11604bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KJONES-local-instance</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>oauth_entity_bb8904471b8505506241eb11604bcb10</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 21:13:04</sys_updated_on>
+        <token_url/>
+        <type>client</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <user/>
+    </oauth_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</application>
+        <file_path/>
+        <instance_id>13f0ea84db076c10566750b6f4961941</instance_id>
+        <instance_name>kljonesdemo1224</instance_name>
+        <name>oauth_entity_bb8904471b8505506241eb11604bcb10</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity"><oauth_entity action="INSERT_OR_UPDATE"><access>public</access><access_token_lifespan>1800</access_token_lifespan><active>true</active><auth_code_lifespan>60</auth_code_lifespan><auth_url/><certificate_url/><client_id>7b89044747850550a6b40125a4649410</client_id><client_secret>﷞﷟﷒0495c7401bc32010a47e54a3604bcb8c﷬﷔1﷬﷭EMnM92pkWI9iFu-cqoZEAQ==_cqIHVftHtPb7CPskV2Dg_G9cd__nv7jGMI=﷮﷯</client_secret><client_uuid>3b8904471b8505506241eb11604bcb10</client_uuid><code_challenge_method>S256</code_challenge_method><comments/><default_grant_type>password</default_grant_type><id_token_lifespan>86400</id_token_lifespan><logo_url/><message_signature_lifespan>60</message_signature_lifespan><name>KJONES-local-instance</name><oauth_api_script/><protocol_name/><public_client>false</public_client><redirect_url>https://kljonesdemo1224.service-now.com</redirect_url><refresh_token_lifespan>8640000</refresh_token_lifespan><refresh_token_url/><restricted_binding>false</restricted_binding><revoke_token_url/><salt/><send_client_credentials_as>request_body_parameter</send_client_credentials_as><skip_authorize>false</skip_authorize><sys_class_name>oauth_entity</sys_class_name><sys_created_by>kjones</sys_created_by><sys_created_on>2022-01-18 21:13:04</sys_created_on><sys_id>bb8904471b8505506241eb11604bcb10</sys_id><sys_mod_count>0</sys_mod_count><sys_name>KJONES-local-instance</sys_name><sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package><sys_policy/><sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope><sys_update_name>oauth_entity_bb8904471b8505506241eb11604bcb10</sys_update_name><sys_updated_by>kjones</sys_updated_by><sys_updated_on>2022-01-18 21:13:04</sys_updated_on><token_url/><type>client</type><use_mutual_auth>false</use_mutual_auth><user/></oauth_entity></record_update>]]></payload>
+        <payload_hash>217777873</payload_hash>
+        <record_name>KJONES-local-instance</record_name>
+        <reverted_from/>
+        <source>6501d5081b10cd106241eb11604bcb04</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 21:13:04</sys_created_on>
+        <sys_id>ad6a80471b8505506241eb11604bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e6f0942730000001</sys_recorded_at>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 21:13:04</sys_updated_on>
+        <type>Application Registries</type>
+        <update_guid>656a8047c38505506a98f2b9bec77d0c</update_guid>
+        <update_guid_history>656a8047c38505506a98f2b9bec77d0c:217777873</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">1e0b08c71b8505506241eb11604bcbe4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-18 21:15:51</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity">oauth_entity</sys_db_object>
+        <sys_id>00c0c2dd171742008188f978357d63e4</sys_id>
+        <sys_metadata>bb8904471b8505506241eb11604bcb10</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KJONES-local-instance</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_scope_delete display_value="">492726965bfb4f379cc40f7801cc6b09</sys_scope_delete>
+        <sys_update_name>oauth_entity_bb8904471b8505506241eb11604bcb10</sys_update_name>
+        <sys_update_version display_value="oauth_entity_bb8904471b8505506241eb11604bcb10">ad6a80471b8505506241eb11604bcb0c</sys_update_version>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-18 21:15:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

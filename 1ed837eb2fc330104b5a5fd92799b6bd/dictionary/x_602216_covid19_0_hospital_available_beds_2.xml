@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Waiting for a Bed" max_length="40" name="x_602216_covid19_0_hospital_available_beds_2" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="address" type="string"/>
+        <element label="Beds" max_length="40" name="beds" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="County" max_length="40" name="county" type="string"/>
+        <element label="Distance" max_length="40" name="distance" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="HELIPAD" max_length="40" name="helipad" type="string"/>
+        <element label="Latitude" max_length="40" name="latitude" type="float"/>
+        <element label="Longitude" max_length="40" name="longitude" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="NAICS DESC" max_length="69" name="naics_desc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="65" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Population" max_length="40" name="population" type="integer"/>
+        <element attributes="encode_utf8=false" label="Requestor for the Bed" max_length="32" name="reg" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="State" max_length="40" name="state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Telephone" max_length="40" name="telephone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Website" max_length="130" name="website" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Zip" max_length="40" name="zip" type="string"/>
+        <index name="index">
+            <element name="reg"/>
+        </index>
+    </element>
+</database>

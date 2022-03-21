@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>servicenow_remote_instance_group_sync</internal_name>
+        <label_cache>[{"name":"4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec.item.user.sys_id","label":"4➛Group Member Record➛User➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id"},{"name":"4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec.item.group.name","label":"4➛Group Member Record➛Group➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user_group","column_name":"name"},{"name":"e99422a5-2812-4c3d-8c17-f6268d88060c.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"e99422a5-2812-4c3d-8c17-f6268d88060c.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"e99422a5-2812-4c3d-8c17-f6268d88060c.errormessage","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8a7a617d-8f20-4204-a8d2-e01d402ebdee"}},{"name":"e99422a5-2812-4c3d-8c17-f6268d88060c.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"dc9933c8-63d7-4181-8421-0f836cde001d"}},{"name":"e99422a5-2812-4c3d-8c17-f6268d88060c.remote_record","label":"4➛Remote Record","reference_display":"Remote Record","type":"dynamic_object","base_type":"dynamic_object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"f0e17949-fdd7-4098-9a86-78745d3f1a2f"}},{"name":"13276889-b469-43b1-823e-4b9d935eabde.remote_record.name","label":"1➛Remote Record➛Name[name]","type":"string","base_type":"string"},{"name":"ef392436-ae72-48cc-8888-879093e13b7a.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef392436-ae72-48cc-8888-879093e13b7a.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef392436-ae72-48cc-8888-879093e13b7a.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef392436-ae72-48cc-8888-879093e13b7a.Table","label":"3➛Group Member Table","reference":"sys_user_grmember","reference_display":"Group Member Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef392436-ae72-48cc-8888-879093e13b7a.Records","label":"3➛Group Member Records","reference":"sys_user_grmember","reference_display":"Group Member Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Group Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user_group","column_name":"sys_id"},{"name":"Created or Updated_1.current.description","label":"Trigger➛Group Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sys_user_group","column_name":"description"},{"name":"Created or Updated_1.current.name","label":"Trigger➛Group Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user_group","column_name":"name"},{"name":"13276889-b469-43b1-823e-4b9d935eabde.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"13276889-b469-43b1-823e-4b9d935eabde.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"13276889-b469-43b1-823e-4b9d935eabde.errormessage","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8a7a617d-8f20-4204-a8d2-e01d402ebdee"}},{"name":"13276889-b469-43b1-823e-4b9d935eabde.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dc9933c8-63d7-4181-8421-0f836cde001d"}},{"name":"13276889-b469-43b1-823e-4b9d935eabde.remote_record","label":"1➛Remote Record","reference_display":"Remote Record","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f0e17949-fdd7-4098-9a86-78745d3f1a2f"}},{"name":"Created or Updated_1.current.include_members","label":"Trigger➛Group Record➛Include members","reference":"","reference_display":"Include members","type":"boolean","base_type":"boolean","parent_table_name":"sys_user_group","column_name":"include_members"},{"name":"Created or Updated_1.current.roles","label":"Trigger➛Group Record➛Roles","reference":"","reference_display":"Roles","type":"user_roles","base_type":"user_roles","parent_table_name":"sys_user_group","column_name":"roles"},{"name":"ac8a1b85-6358-4d23-afbb-88bac3c7d6f2.remote_record","label":"4➛Remote Record","reference_display":"Remote Record","type":"dynamic_object","base_type":"dynamic_object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"f0e17949-fdd7-4098-9a86-78745d3f1a2f"}},{"name":"ac8a1b85-6358-4d23-afbb-88bac3c7d6f2.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"dc9933c8-63d7-4181-8421-0f836cde001d"}},{"name":"ac8a1b85-6358-4d23-afbb-88bac3c7d6f2.errormessage","label":"4➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8a7a617d-8f20-4204-a8d2-e01d402ebdee"}},{"name":"ac8a1b85-6358-4d23-afbb-88bac3c7d6f2.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"ac8a1b85-6358-4d23-afbb-88bac3c7d6f2.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec.item","label":"4➛Group Member Record","reference":"sys_user_grmember","reference_display":"Group Member Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"a51e9502-ea81-4201-820e-8a06519097de.remote_record","label":"5➛Remote Record","reference_display":"Remote Record","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f0e17949-fdd7-4098-9a86-78745d3f1a2f"}},{"name":"a51e9502-ea81-4201-820e-8a06519097de.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dc9933c8-63d7-4181-8421-0f836cde001d"}},{"name":"a51e9502-ea81-4201-820e-8a06519097de.errormessage","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"8a7a617d-8f20-4204-a8d2-e01d402ebdee"}},{"name":"a51e9502-ea81-4201-820e-8a06519097de.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a51e9502-ea81-4201-820e-8a06519097de.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec.item.group","label":"4➛Group Member Record➛Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"group"},{"name":"4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec.item.user","label":"4➛Group Member Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"user"},{"name":"4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec.item.user.name","label":"4➛Group Member Record➛User➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>ServiceNow Remote Instance Group Sync</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:12:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4006a7071b8d45506241eb11604bcb37</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>ServiceNow Remote Instance Group Sync</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_hub_flow_4006a7071b8d45506241eb11604bcb37</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:01</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=4006a7071b8d45506241eb11604bcb37"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4006a7071b8d45506241eb11604bcb37"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=4006a7071b8d45506241eb11604bcb37^sys_idNOT IN38772fc71b8d45506241eb11604bcbc5"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>38772fc71b8d45506241eb11604bcbc5</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:00</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=38772fc71b8d45506241eb11604bcbc5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>38772fc71b8d45506241eb11604bcbc5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>b4772fc71b8d45506241eb11604bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <value>sys_user_group</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>38772fc71b8d45506241eb11604bcbc5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>f8772fc71b8d45506241eb11604bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=38772fc71b8d45506241eb11604bcbc5"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4006a7071b8d45506241eb11604bcb37"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4006a7071b8d45506241eb11604bcb37^sys_idNOT IN0006a7071b8d45506241eb11604bcb3a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4006a7071b8d45506241eb11604bcb37</id>
+        <name>ServiceNow Remote Instance Group Sync</name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:12:31</sys_created_on>
+        <sys_id>0006a7071b8d45506241eb11604bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:12:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0006a7071b8d45506241eb11604bcb3a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4006a7071b8d45506241eb11604bcb37^sys_idNOT IN7c772fc71b8d45506241eb11604bcbbc,e8772fc71b8d45506241eb11604bcbaa,fc772fc71b8d45506241eb11604bcbb5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</model>
+        <model_id>4006a7071b8d45506241eb11604bcb37</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>7c772fc71b8d45506241eb11604bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</model>
+        <model_id>4006a7071b8d45506241eb11604bcb37</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>e8772fc71b8d45506241eb11604bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD3ffc77039141855022dbb33be756b70c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</model>
+        <model_id>4006a7071b8d45506241eb11604bcb37</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>fc772fc71b8d45506241eb11604bcbb5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=4006a7071b8d45506241eb11604bcb37"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4006a7071b8d45506241eb11604bcb37"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=4006a7071b8d45506241eb11604bcb37^sys_idNOT IN26357b031b0185506241eb11604bcb81,4f373b071b0185506241eb11604bcbcb,f0772fc71b8d45506241eb11604bcbde"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</flow>
+        <order>3</order>
+        <parent_ui_id>f5e27f32-182f-4594-83be-aa6eb9b78905</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:19:03</sys_created_on>
+        <sys_id>26357b031b0185506241eb11604bcb81</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:00</sys_updated_on>
+        <ui_id>ef392436-ae72-48cc-8888-879093e13b7a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=26357b031b0185506241eb11604bcb81"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>26357b031b0185506241eb11604bcb81</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:19:03</sys_created_on>
+        <sys_id>aa357b031b0185506241eb11604bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:19:03</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=26357b031b0185506241eb11604bcb81"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>26357b031b0185506241eb11604bcb81</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:19:03</sys_created_on>
+        <sys_id>66357b031b0185506241eb11604bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:19:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>group.name={{13276889-b469-43b1-823e-4b9d935eabde.remote_record.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>26357b031b0185506241eb11604bcb81</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:19:03</sys_created_on>
+        <sys_id>2a357b031b0185506241eb11604bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:19:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=26357b031b0185506241eb11604bcb81"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=26357b031b0185506241eb11604bcb81"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Remote Record">b624cdd1931510106b543511e57ffb32</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</flow>
+        <order>5</order>
+        <parent_ui_id>4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:27:49</sys_created_on>
+        <sys_id>4f373b071b0185506241eb11604bcbcb</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:00</sys_updated_on>
+        <ui_id>a51e9502-ea81-4201-820e-8a06519097de</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4f373b071b0185506241eb11604bcbcb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4f373b071b0185506241eb11604bcbcb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:27:49</sys_created_on>
+        <sys_id>0b373b071b0185506241eb11604bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:27:49</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Remote Table">fa24cdd1931510106b543511e57ffb33</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4f373b071b0185506241eb11604bcbcb</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:27:49</sys_created_on>
+        <sys_id>cf373b071b0185506241eb11604bcbcd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:33:49</sys_updated_on>
+        <value>{"children":[{"name":"sys_created_on","label":"Created[sys_created_on]","type":"datetime"},{"name":"sys_created_by","label":"Created by[sys_created_by]","type":"string"},{"name":"group","label":"Group[group]","type":"string"},{"name":"sys_id","label":"Sys ID[sys_id]","type":"string"},{"name":"sys_tags","label":"Tags[sys_tags]","type":"string"},{"name":"sys_updated_on","label":"Updated[sys_updated_on]","type":"datetime"},{"name":"sys_updated_by","label":"Updated by[sys_updated_by]","type":"string"},{"name":"sys_mod_count","label":"Updates[sys_mod_count]","type":"integer"},{"name":"user","label":"User[user]","type":"string"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f0e17949-fdd7-4098-9a86-78745d3f1a2f"}}</value>
+        <variable display_value="Remote Record">4b24cdd1931510106b543511e57ffb45</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4f373b071b0185506241eb11604bcbcb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dynamic_hidden_input_remote_record</field>
+        <id>4f373b071b0185506241eb11604bcbcb</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:27:49</sys_created_on>
+        <sys_id>c7373b071b0185506241eb11604bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:27:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b624cdd1931510106b543511e57ffb32</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>remote_fields</field>
+        <id>4f373b071b0185506241eb11604bcbcb</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:27:49</sys_created_on>
+        <sys_id>4f373b071b0185506241eb11604bcbcd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b624cdd1931510106b543511e57ffb32</table>
+        <value>user={{4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec.item.user.name}}^group={{4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec.item.group.name}}^coalesce_fields=group</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>remote_table</field>
+        <id>4f373b071b0185506241eb11604bcbcb</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:27:49</sys_created_on>
+        <sys_id>8b373b071b0185506241eb11604bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:27:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b624cdd1931510106b543511e57ffb32</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4f373b071b0185506241eb11604bcbcb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f373b071b0185506241eb11604bcbcb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Remote Record">b624cdd1931510106b543511e57ffb32</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>f0772fc71b8d45506241eb11604bcbde</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:00</sys_updated_on>
+        <ui_id>13276889-b469-43b1-823e-4b9d935eabde</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f0772fc71b8d45506241eb11604bcbde"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f0772fc71b8d45506241eb11604bcbde</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>78772fc71b8d45506241eb11604bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <value>sys_user_group</value>
+        <variable display_value="Remote Table">fa24cdd1931510106b543511e57ffb33</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f0772fc71b8d45506241eb11604bcbde</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>b4772fc71b8d45506241eb11604bcbe1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:37:23</sys_updated_on>
+        <value>{"children":[{"name":"active","label":"Active[active]","type":"boolean"},{"name":"cost_center","label":"Cost center[cost_center]","type":"string"},{"name":"sys_created_on","label":"Created[sys_created_on]","type":"datetime"},{"name":"sys_created_by","label":"Created by[sys_created_by]","type":"string"},{"name":"default_assignee","label":"Default assignee[default_assignee]","type":"string"},{"name":"description","label":"Description[description]","type":"string"},{"name":"exclude_manager","label":"Exclude manager[exclude_manager]","type":"boolean"},{"name":"email","label":"Group email[email]","type":"string"},{"name":"include_members","label":"Include members[include_members]","type":"boolean"},{"name":"manager","label":"Manager[manager]","type":"string"},{"name":"name","label":"Name[name]","type":"string"},{"name":"parent","label":"Parent[parent]","type":"string"},{"name":"roles","label":"Roles[roles]","type":"string"},{"name":"source","label":"Source[source]","type":"string"},{"name":"sys_id","label":"Sys ID[sys_id]","type":"string"},{"name":"sys_tags","label":"Tags[sys_tags]","type":"string"},{"name":"type","label":"Type[type]","type":"string"},{"name":"sys_updated_on","label":"Updated[sys_updated_on]","type":"datetime"},{"name":"sys_updated_by","label":"Updated by[sys_updated_by]","type":"string"},{"name":"sys_mod_count","label":"Updates[sys_mod_count]","type":"integer"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f0e17949-fdd7-4098-9a86-78745d3f1a2f"}}</value>
+        <variable display_value="Remote Record">4b24cdd1931510106b543511e57ffb45</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f0772fc71b8d45506241eb11604bcbde"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>dynamic_hidden_input_remote_record</field>
+        <id>f0772fc71b8d45506241eb11604bcbde</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>38772fc71b8d45506241eb11604bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b624cdd1931510106b543511e57ffb32</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>remote_fields</field>
+        <id>f0772fc71b8d45506241eb11604bcbde</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>34772fc71b8d45506241eb11604bcbe1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:19:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b624cdd1931510106b543511e57ffb32</table>
+        <value>name={{Created or Updated_1.current.name}}^description={{Created or Updated_1.current.description}}^sys_id={{Created or Updated_1.current.sys_id}}^coalesce_fields=sys_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>remote_table</field>
+        <id>f0772fc71b8d45506241eb11604bcbde</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>70772fc71b8d45506241eb11604bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b624cdd1931510106b543511e57ffb32</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f0772fc71b8d45506241eb11604bcbde"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f0772fc71b8d45506241eb11604bcbde"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4006a7071b8d45506241eb11604bcb37"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=4006a7071b8d45506241eb11604bcb37^sys_idNOT IN5b1af38b1b0185506241eb11604bcbcb,62357b031b0185506241eb11604bcb43,be373b071b0185506241eb11604bcbb2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">531af38b1b0185506241eb11604bcbcb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f5e27f32-182f-4594-83be-aa6eb9b78905</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:40:24</sys_created_on>
+        <sys_id>5b1af38b1b0185506241eb11604bcbcb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:00</sys_updated_on>
+        <ui_id>db5aecd4-2cde-4fa9-9fd0-24145ce4ac0d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5b1af38b1b0185506241eb11604bcbcb"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5b1af38b1b0185506241eb11604bcbcb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5b1af38b1b0185506241eb11604bcbcb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">66357b031b0185506241eb11604bcb42</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:19:03</sys_created_on>
+        <sys_id>62357b031b0185506241eb11604bcb43</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:00</sys_updated_on>
+        <ui_id>f5e27f32-182f-4594-83be-aa6eb9b78905</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=62357b031b0185506241eb11604bcb43"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>62357b031b0185506241eb11604bcb43</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:19:03</sys_created_on>
+        <sys_id>2e357b031b0185506241eb11604bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:19:03</sys_updated_on>
+        <value>If Remote Recored Status is Success</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=62357b031b0185506241eb11604bcb43"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>62357b031b0185506241eb11604bcb43</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:19:03</sys_created_on>
+        <sys_id>aa357b031b0185506241eb11604bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:19:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{13276889-b469-43b1-823e-4b9d935eabde.status}}=Success</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>62357b031b0185506241eb11604bcb43</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:19:03</sys_created_on>
+        <sys_id>e2357b031b0185506241eb11604bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:19:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=62357b031b0185506241eb11604bcb43"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=62357b031b0185506241eb11604bcb43"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b6373b071b0185506241eb11604bcbb2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="ServiceNow Remote Instance Group Sync">4006a7071b8d45506241eb11604bcb37</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f5e27f32-182f-4594-83be-aa6eb9b78905</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:27:49</sys_created_on>
+        <sys_id>be373b071b0185506241eb11604bcbb2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:53:00</sys_updated_on>
+        <ui_id>4db99b5f-93d4-4b81-9cb8-0492cb4ba3ec</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=be373b071b0185506241eb11604bcbb2"/>
+    <sys_element_mapping action="delete_multiple" query="id=be373b071b0185506241eb11604bcbb2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>be373b071b0185506241eb11604bcbb2</id>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 14:27:49</sys_created_on>
+        <sys_id>3e373b071b0185506241eb11604bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 14:27:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{ef392436-ae72-48cc-8888-879093e13b7a.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=be373b071b0185506241eb11604bcbb2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=be373b071b0185506241eb11604bcbb2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4006a7071b8d45506241eb11604bcb37"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4006a7071b8d45506241eb11604bcb37"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37^sys_idNOT INb0772fc71b8d45506241eb11604bcbb4,b4772fc71b8d45506241eb11604bcbbb,fc772fc71b8d45506241eb11604bcbc1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>b0772fc71b8d45506241eb11604bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37_current_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>b4772fc71b8d45506241eb11604bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37_changed_fields_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2022-01-19 13:18:51</sys_created_on>
+        <sys_id>fc772fc71b8d45506241eb11604bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37_table_name_en</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2022-01-19 13:18:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4006a7071b8d45506241eb11604bcb37"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4006a7071b8d45506241eb11604bcb37"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4006a7071b8d45506241eb11604bcb37"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4006a7071b8d45506241eb11604bcb37"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4006a7071b8d45506241eb11604bcb37"/>
+</record_update>

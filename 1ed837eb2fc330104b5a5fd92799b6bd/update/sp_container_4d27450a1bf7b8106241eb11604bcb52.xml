@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name>visible-xs</class_name>
+        <container_class_name/>
+        <name>Covid Hospital Bed Map - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="cb_map">3027450a1bf7b8106241eb11604bcb22</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>kjones</sys_created_by>
+        <sys_created_on>2021-11-14 19:46:02</sys_created_on>
+        <sys_id>4d27450a1bf7b8106241eb11604bcb52</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Covid Hospital Bed Map - Container 1</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sp_container_4d27450a1bf7b8106241eb11604bcb52</sys_update_name>
+        <sys_updated_by>kjones</sys_updated_by>
+        <sys_updated_on>2021-11-14 19:50:22</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>
