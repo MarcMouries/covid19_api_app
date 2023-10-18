@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy">
+    <sys_kmf_crypto_caller_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <approval_type/>
+        <check_script_hash>false</check_script_hash>
+        <crypto_module display_value="com_glide_certificates_glideencrypter">8994cbe3ff23201022f462aa453bf13d</crypto_module>
+        <crypto_spec/>
+        <granular_operation/>
+        <identity_group_alias/>
+        <impersonation>false</impersonation>
+        <instance_recipient/>
+        <owner>9e5e7297dbf290d89a4dcac5059619d0</owner>
+        <policy_name>AutoGen-script-8b25f312d733210092610eca5e610335-global.com_glide_certificates_glideencrypter</policy_name>
+        <result>reject</result>
+        <script_hash>fa8sypkPMHE0VKQfj5T5osOLRqrYWfiAU9XR6UTRI7k=</script_hash>
+        <script_table>sys_script_include</script_table>
+        <signature_data/>
+        <specify_purpose>false</specify_purpose>
+        <sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2022-03-23 19:50:55</sys_created_on>
+        <sys_id>d65dd1231b5ac510ce2b6579b04bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AutoGen-script-8b25f312d733210092610eca5e610335-global.com_glide_certificates_glideencrypter</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_kmf_crypto_caller_policy_d65dd1231b5ac510ce2b6579b04bcb30</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2022-03-23 19:50:55</sys_updated_on>
+        <target_role/>
+        <target_scope display_value="Scoped App Client">781f36a96fef21005be8883e6b3ee43d</target_scope>
+        <target_script>8b25f312d733210092610eca5e610335</target_script>
+        <type>1</type>
+        <used>false</used>
+    </sys_kmf_crypto_caller_policy>
+</record_update>

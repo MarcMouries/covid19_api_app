@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list">
+    <sys_ux_list action="DELETE">
+        <active>true</active>
+        <category display_value="API Key Information">999908842f1370104b5a5fd92799b688</category>
+        <columns>number,site_name,site_url,api_key</columns>
+        <condition/>
+        <configuration display_value="Available Beds_menu_config">d59908842f1370104b5a5fd92799b686</configuration>
+        <group_by_column/>
+        <groups/>
+        <list_attributes/>
+        <order>50</order>
+        <roles/>
+        <sys_class_name>sys_ux_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-14 13:37:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>559908842f1370104b5a5fd92799b68b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_ux_list_559908842f1370104b5a5fd92799b68b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 13:37:50</sys_updated_on>
+        <table>x_602216_covid19_0_api_key_information</table>
+        <title>All</title>
+    </sys_ux_list>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</application>
+        <file_path/>
+        <instance_id>9e5e7297dbf290d89a4dcac5059619d0</instance_id>
+        <instance_name>appengine4gov</instance_name>
+        <name>sys_ux_list_559908842f1370104b5a5fd92799b68b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list">
+    <sys_ux_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="API Key Information">999908842f1370104b5a5fd92799b688</category>
+        <columns>number,site_name,site_url,api_key</columns>
+        <condition/>
+        <configuration display_value="Available Beds_menu_config">d59908842f1370104b5a5fd92799b686</configuration>
+        <group_by_column/>
+        <groups/>
+        <list_attributes/>
+        <order>50</order>
+        <roles/>
+        <sys_class_name>sys_ux_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-14 13:37:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>559908842f1370104b5a5fd92799b68b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_ux_list_559908842f1370104b5a5fd92799b68b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-14 13:37:50</sys_updated_on>
+        <table>x_602216_covid19_0_api_key_information</table>
+        <title>All</title>
+    </sys_ux_list>
+</record_update>]]></payload>
+        <payload_hash>1874925447</payload_hash>
+        <record_name>All</record_name>
+        <reverted_from/>
+        <source>c0593c691bdec110ce2b6579b04bcb83</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2022-03-17 12:07:22</sys_created_on>
+        <sys_id>9db93ce91bdec110ce2b6579b04bcbcf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_recorded_at>17f97c67dd70000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-03-28 00:45:43</sys_updated_on>
+        <type>UX List</type>
+        <update_guid>5db93ce97edec11012834b61d89665cf</update_guid>
+        <update_guid_history>5db93ce97edec11012834b61d89665cf:1874925447</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2022-04-01 13:54:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_list">sys_ux_list</sys_db_object>
+        <sys_id>5cbc0d7ad69f4b4db21721369a228121</sys_id>
+        <sys_metadata>559908842f1370104b5a5fd92799b68b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_scope_delete display_value="">492726965bfb4f379cc40f7801cc6b09</sys_scope_delete>
+        <sys_update_name>sys_ux_list_559908842f1370104b5a5fd92799b68b</sys_update_name>
+        <sys_update_version display_value="sys_ux_list_559908842f1370104b5a5fd92799b68b">9db93ce91bdec110ce2b6579b04bcbcf</sys_update_version>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2022-04-01 13:54:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
