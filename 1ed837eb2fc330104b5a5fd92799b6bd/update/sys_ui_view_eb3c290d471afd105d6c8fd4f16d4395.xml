@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>Workspace-Available-Beds-0</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-02 15:04:39</sys_created_on>
+        <sys_id>eb3c290d471afd105d6c8fd4f16d4395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace Available Beds 0</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_ui_view_eb3c290d471afd105d6c8fd4f16d4395</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-11-02 15:04:39</sys_updated_on>
+        <title>Workspace Available Beds 0</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

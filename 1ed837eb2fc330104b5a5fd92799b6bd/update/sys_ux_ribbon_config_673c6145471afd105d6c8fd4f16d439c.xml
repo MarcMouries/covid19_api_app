@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_ribbon_config">
+    <sys_ux_ribbon_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Available Beds Ribbon Config</description>
+        <name>Available Beds Ribbon Config</name>
+        <sys_class_name>sys_ux_ribbon_config</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2023-11-02 15:04:39</sys_created_on>
+        <sys_id>673c6145471afd105d6c8fd4f16d439c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Available Beds Ribbon Config</sys_name>
+        <sys_package display_value="Covid-19 Available Beds Spoke" source="x_602216_covid19_0">1ed837eb2fc330104b5a5fd92799b6bd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Covid-19 Available Beds Spoke">1ed837eb2fc330104b5a5fd92799b6bd</sys_scope>
+        <sys_update_name>sys_ux_ribbon_config_673c6145471afd105d6c8fd4f16d439c</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2023-11-02 15:04:39</sys_updated_on>
+    </sys_ux_ribbon_config>
+</record_update>
